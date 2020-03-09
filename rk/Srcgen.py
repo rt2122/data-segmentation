@@ -1,6 +1,8 @@
 import numpy as np 
 import random as rnd
 from matplotlib import pyplot as plt
+from skimage.draw import circle
+from skimage.io import imshow
 
 def gen_gauss_dots(n_dots, xy_range, scale, mu=0, sigma=1):
 
@@ -15,22 +17,7 @@ def gen_gauss_dots(n_dots, xy_range, scale, mu=0, sigma=1):
     res *= scale
     res[:, 0] += xy_range[0].mean()
     res[:, 1] += xy_range[1].mean()
-    
-    #res = [[x, y] for [x, y] in res if (x >= x_range[0]) and (x < x_range[1]) and 
-    #                                   (y >= y_range[0]) and (y < y_range[1])]
-    
-    '''
-    for i in range(res.shape[0]):
-        for j in range(2):
-            if res[i, j] < xy_range[j, 0]:
-                dif = int(xy_range[j, 0] - res[i, j])
-                dif //= xy_range[j, 1] - xy_range[j, 0]
-                res[i, j] += dif * xy_range[j, 1] - xy_range[j, 0]
-            if res[i, j] >= xy_range[j, 1]:
-                dif = int(res[i, j] - xy_range[j, 1])
-                dif //= xy_range[j, 1] - xy_range[j, 0]
-                res[i, j] -= dif * xy_range[j, 1] - xy_range[j, 0]
-    '''
+
     for i in range(res.shape[0]):
         for j in range(2):
             if res[i, j] < xy_range[j, 0] or res[i, j] >= xy_range[j, 1]:
@@ -46,6 +33,7 @@ class Src:
         self.rad = np.random.randint(2, max_rad + 1) 
         self.n = np.random.randint(2, max_n + 1)
         if noise:
+            self.rad = max_rad
             self.n = max_n
     def gen_ph(self, label, scale=1, shape=None):
         xy_range = [[self.x - self.rad, self.x + self.rad], 
@@ -66,24 +54,41 @@ def gen_src(n_src, max_rad, max_n, shape):
     return np.array(srcs)
 
 def gen_ph_map(srcs, shape, n_noise):
-    mtr = np.zeros(shape, dtype=np.uint8)
-    all_ph = []
+    all_ph = None 
     for i in range(len(srcs)):
-        all_ph.extend(srcs[i].gen_ph(i, shape=shape))
+        ph = srcs[i].gen_ph(i, shape=shape)
+        if all_ph is None:
+            all_ph = ph
+        else:
+           all_ph = np.vstack([all_ph, ph])
     
     noise = Src(shape[0] // 2, shape[1] // 2, max_rad = max(shape) * 4, max_n=n_noise, noise=True)
-    all_ph.extend(noise.gen_ph(len(srcs), scale=max(shape) * 440, shape=shape))
-    return np.array(all_ph)
+    all_ph = np.vstack([all_ph, noise.gen_ph(len(srcs), scale=max(shape) * 440, shape=shape)])
+    return all_ph
 
 def gen_all(n_src, max_rad, max_n, shape, n_noise):
     srcs = gen_src(n_src, max_rad, max_n, shape)
-    return gen_ph_map(srcs, shape, n_noise)
+    return gen_ph_map(srcs, shape, n_noise), srcs
 
+def gen_train(n_src, max_rad, max_n, shape, n_noise):
+    while 4:
+        phs, srcs = gen_all(n_src, max_rad, max_n, shape, n_noise)
+        X = np.zeros(shape, np.uint8)
+        Y = np.zeros(shape, np.uint8)
+        phs = phs.astype(np.int64)
+        for ph in phs:
+            X[ph[0], ph[1], 0] = 1
+        for src in srcs:
+            c = circle(src.x, src.y, src.rad, shape)
+            Y[c] = 1
+        yield np.array([X]), np.array([Y])
 
+rnd.seed(0)
 
-
-alls = gen_all(10, 4, 5, (100, 100), 1000)
-plt.figure(num=0, figsize=(10, 10))
-plt.scatter(alls[:, 0], alls[:, 1], c=alls[:, 2])
-plt.show()
-
+for X, Y in gen_train(50, 10, 20, (500, 500), 10000):
+    plt.figure(num=0)
+    imshow(X * 255)
+    plt.figure(num=1)
+    imshow(Y * 255)
+    plt.show()
+    break
