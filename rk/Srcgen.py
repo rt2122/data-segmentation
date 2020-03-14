@@ -13,21 +13,22 @@ def gen_gauss_dots(n_dots, xy_range, scale, mu=0, sigma=1, re_random=True):
     for i in range(n_dots):
         res.append([rnd.gauss(mu, sigma), rnd.gauss(mu, sigma)])
     
-    res = np.array(res).astype(np.int64)
+    res = np.array(res)
     res *= scale
     res[:, 0] += xy_range[0].mean()
     res[:, 1] += xy_range[1].mean()
+    res = res.astype(np.int64)
 
     if re_random:
         for i in range(res.shape[0]): 
             for j in range(2):
-                if res[i, j] in range(xy_range[j, 0], xy_range[j, 1]):
-                    res[i, j] = np.random.randint(xy_range[j, 0], xy_range[j, 1])
+                if not (res[i, j] in range(xy_range[j, 0], xy_range[j, 1], 1)):
+                    res[i, j] = np.random.randint(low=xy_range[j, 0], high=xy_range[j, 1], dtype=np.int64)
     else:
-        res = [[x, y] for [x, y] in res if x in range(xy_range[0, 0], xy_range[0, 1]) and 
-                                           y in range(xy_range[1, 0], xy_range[1, 1])]
+        res = [[x, y] for [x, y] in res if x in range(xy_range[0, 0], xy_range[0, 1], 1) and 
+                                           y in range(xy_range[1, 0], xy_range[1, 1], 1)]
         res = np.array(res)
-
+    
     return res
 
 class Src: #добавить генерацию протяженного объекта
@@ -36,6 +37,7 @@ class Src: #добавить генерацию протяженного объ�
         self.x = x
         self.y = y
         self.rad = np.random.randint(2, max_rad + 1) #Poiss lambda - num ph 
+        #self.rad = max_rad
         self.n = np.random.randint(2, max_n + 1)
         if noise:
             self.rad = max_rad
@@ -48,13 +50,16 @@ class Src: #добавить генерацию протяженного объ�
         if shape is not None:
             coords = np.array([[x, y] for [x, y] in coords 
                 if x in range(shape[0]) and y in range(shape[1])])
+        if coords.shape[0] == 0:
+            return None
 
         labels = np.array([label] * len(coords)).reshape(len(coords), 1)
         return np.hstack([coords, labels])
 
 
 def gen_src(n_src, max_rad, max_n, shape):
-    coords = gen_gauss_dots(n_src, [[0, shape[0]], [0, shape[1]]], max(shape) * 44) 
+    coords = gen_gauss_dots(n_dots=n_src, xy_range=[[0, shape[0]], [0, shape[1]]], 
+            scale=max(shape) * 4) 
     srcs = []
     for [x, y] in coords:
         srcs.append(Src(x, y, max_rad, max_n))
@@ -64,10 +69,11 @@ def gen_ph_map(srcs, shape, n_noise):
     all_ph = None 
     for i in range(len(srcs)):
         ph = srcs[i].gen_ph(i, shape=shape)
-        if all_ph is None:
-            all_ph = ph
-        else:
-           all_ph = np.vstack([all_ph, ph])
+        if not ph is None:
+            if all_ph is None:
+                all_ph = ph
+            else:
+               all_ph = np.vstack([all_ph, ph])
     
     noise = Src(shape[0] // 2, shape[1] // 2, max_rad = max(shape) * 4, max_n=n_noise, noise=True) 
     all_ph = np.vstack([all_ph, noise.gen_ph(len(srcs), scale=max(shape) * 440, shape=shape)])
@@ -93,10 +99,10 @@ def gen_train(n_src, max_rad, max_n, shape, d_noise):
 
 rnd.seed(0)
 
-for X, Y in gen_train(50, 10, 20, (500, 500), 0.1):
+for X, Y in gen_train(50, 10, 20, (500, 500, 1), 0.05):
     plt.figure(num=0)
-    imshow(X * 255)
+    imshow(X[0, :, :, 0] * 255)
     plt.figure(num=1)
-    imshow(Y * 255)
+    imshow(Y[0, :, :, 0] * 255)
     plt.show()
     break
