@@ -3,6 +3,7 @@ import random as rnd
 from matplotlib import pyplot as plt
 from skimage.draw import circle
 from skimage.io import imshow
+from scipy.stats import poisson
 
 def gen_gauss_dots(n_dots, xy_range, scale, mu=0, sigma=1, re_random=True):
 
@@ -36,9 +37,9 @@ class Src: #добавить генерацию протяженного объ�
     def __init__(self, x, y, max_rad, max_n, noise=False):
         self.x = x
         self.y = y
-        self.rad = np.random.randint(2, max_rad + 1) #Poiss lambda - num ph 
-        #self.rad = max_rad
-        self.n = np.random.randint(2, max_n + 1)
+        #self.rad = np.random.randint(2, max_rad + 1) #Poiss lambda - num ph 
+        self.rad = max_rad
+        self.n = poisson.rvs(mu=max_n)
         if noise:
             self.rad = max_rad
             self.n = max_n
