@@ -4,6 +4,7 @@ from matplotlib import pyplot as plt
 from skimage.draw import circle
 from skimage.io import imshow
 from scipy.stats import poisson
+from time import time
 
 def gen_gauss_dots(n_dots, xy_range, scale, mu=0, sigma=1, re_random=True):
 
@@ -13,7 +14,6 @@ def gen_gauss_dots(n_dots, xy_range, scale, mu=0, sigma=1, re_random=True):
     res = []
     for i in range(n_dots):
         res.append([rnd.gauss(mu, sigma), rnd.gauss(mu, sigma)])
-    
     res = np.array(res)
     res *= scale
     res[:, 0] += xy_range[0].mean()
@@ -115,13 +115,30 @@ def random_colour_circles(Y):
     np.clip(y_pic, 0, 255, y_pic)
     return y_pic[0]
 
+def show_x_y(X, Y, ans=None):
+    if ans is None:
+        plt.figure(num=0, figsize=(12, 6))
+        fig, axes = plt.subplots(1, 2, num=0)
+        axes[0].imshow(X[0, :, :, 0] * 255)
+        axes[0].set_title("Карта расположения фотонов")
+        axes[1].imshow(random_colour_circles(Y))
+        axes[1].set_title("Источники")
+    else:
+        plt.figure(num=0, figsize=(12, 6))
+        fig, axes = plt.subplots(1, 3, num=0)
+        axes[0].imshow(X[0, :, :, 0] * 255)
+        axes[0].set_title("Карта расположения фотонов")
+        axes[1].imshow(random_colour_circles(Y))
+        axes[1].set_title("Источники")
+        axes[2].imshow(random_colour_circles(ans))
+        axes[2].set_titile("Результат работы нейросети")
+
+    plt.show()
+
+
 
 rnd.seed(0)
 
-for X, Y in gen_train(100, 10, 20, (1024, 1024, 1), 0.05):
-    plt.figure(num=0)
-    imshow(X[0, :, :, 0] * 255)
-    plt.figure(num=1)
-    imshow(random_colour_circles(Y))
-    plt.show()
+for X, Y in gen_train(25, 10, 20, (512, 512, 1), 0.08):
+    show_x_y(X, Y)
     break
