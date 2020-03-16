@@ -84,26 +84,44 @@ def gen_all(n_src, max_rad, max_n, shape, n_noise):
     srcs = gen_src(n_src, max_rad, max_n, shape)
     return gen_ph_map(srcs, shape, n_noise), srcs
 
-def gen_train(n_src, max_rad, max_n, shape, d_noise):
+def gen_train(n_src, max_rad, max_n, shape, d_noise, n_out=None):
     while 4:
+        if n_out is None:
+            n_out = n_src
         n_noise = int(d_noise * shape[0] * shape[1])
         phs, srcs = gen_all(n_src, max_rad, max_n, shape, n_noise)
         X = np.zeros(shape, np.uint8)
-        Y = np.zeros(shape, np.uint8)
+        Y = np.zeros(list(shape)[:-1] + [n_out], np.uint8)
         phs = phs.astype(np.int64)
         for ph in phs:
             X[ph[0], ph[1], 0] = 1
-        for src in srcs:
-            c = circle(src.x, src.y, src.rad, shape)
-            Y[c] = 1
+        for i in range(n_src):
+            c = circle(srcs[i].x, srcs[i].y, srcs[i].rad, list(shape)[:-1])
+            Y[:, :, i][c] = 1
         yield np.array([X]), np.array([Y])
+
+def random_colour_circles(Y):
+
+    y_pic = np.zeros(list(Y.shape)[:-1] + [3], np.uint8)
+
+    for i in range(Y.shape[-1]):
+        R = rnd.randint(0, 255)
+        G = rnd.randint(0, 255)
+        B = rnd.randint(0, 255)
+
+        y_pic[0, :, :, 0] += R * Y[0, :, :, i]
+        y_pic[0, :, :, 1] += G * Y[0, :, :, i]
+        y_pic[0, :, :, 2] += B * Y[0, :, :, i]
+    np.clip(y_pic, 0, 255, y_pic)
+    return y_pic[0]
+
 
 rnd.seed(0)
 
-for X, Y in gen_train(50, 10, 20, (500, 500, 1), 0.05):
+for X, Y in gen_train(100, 10, 20, (1024, 1024, 1), 0.05):
     plt.figure(num=0)
     imshow(X[0, :, :, 0] * 255)
     plt.figure(num=1)
-    imshow(Y[0, :, :, 0] * 255)
+    imshow(random_colour_circles(Y))
     plt.show()
     break
