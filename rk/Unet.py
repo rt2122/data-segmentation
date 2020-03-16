@@ -20,7 +20,7 @@ from matplotlib.pyplot import figure
 from skimage.io import imshow
 from tensorflow.keras.layers import BatchNormalization
 
-def unet(input_size = (2048,2048,4), filters=64, blocks=4):
+def unet(input_size = (2048,2048,4), filters=64, blocks=4, output_layers=50):
     encoder = []
     inputs = Input(input_size)
     prev = inputs
@@ -54,7 +54,7 @@ def unet(input_size = (2048,2048,4), filters=64, blocks=4):
         prev = cur
         filters //= 2
 
-    prev = Conv2D(1, kernel_size=1)(prev)
+    prev = Conv2D(output_layers, kernel_size=1)(prev)
     prev = Activation(sigmoid)(prev)
     print(prev.shape)
     
