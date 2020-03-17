@@ -116,22 +116,27 @@ def gen_all(n_src, max_rad, max_n, shape, n_noise):
     ph_map = gen_ph_map(srcs, shape, n_noise, n_ph) 
     return ph_map, srcs
 
-def gen_train(n_src, max_rad, max_n, shape, d_noise, n_out=None, scale_mult=1):
+def gen_train(n_src, max_rad, max_n, shape, d_noise, n_out=None, scale_mult=1, steps=1):
     Src.scale_mult = scale_mult
     while 4:
-        if n_out is None:
-            n_out = n_src
-        n_noise = int(d_noise * shape[0] * shape[1])
-        phs, srcs = gen_all(n_src, max_rad, max_n, shape, n_noise)
-        X = np.zeros(shape, np.uint8)
-        Y = np.zeros(list(shape)[:-1] + [n_out], np.uint8)
-        phs = phs.astype(np.int64)
-        for ph in phs:
-            X[ph[0], ph[1], 0] = 1
-        for i in range(n_src):
-            c = circle(srcs[i].x, srcs[i].y, srcs[i].rad, list(shape)[:-1])
-            Y[:, :, i][c] = 1
-        yield np.array([X]), np.array([Y])
+        X = []
+        Y = []
+        for j in range(steps):
+            if n_out is None:
+                n_out = n_src
+            n_noise = int(d_noise * shape[0] * shape[1])
+            phs, srcs = gen_all(n_src, max_rad, max_n, shape, n_noise)
+            x = np.zeros(shape, np.uint8)
+            y = np.zeros(list(shape)[:-1] + [n_out], np.uint8)
+            phs = phs.astype(np.int64)
+            for ph in phs:
+                x[ph[0], ph[1], 0] = 1
+            for i in range(n_src):
+                c = circle(srcs[i].x, srcs[i].y, srcs[i].rad, list(shape)[:-1])
+                y[:, :, i][c] = 1
+            X.append(x)
+            Y.append(y)
+        yield np.array(X), np.array(Y)
 
 def random_colour_circles(Y):
 
