@@ -53,3 +53,10 @@ def unet(input_size = (2048,2048,4), filters=64, blocks=4, output_layers=50):
     model.compile(optimizer = Adam(lr = 1e-4), loss = categorical_crossentropy, metrics = ['accuracy'])
     
     return model
+
+def iou(y_pred, y_true):
+    iou_sum = 0
+    for i in range(y_pred.shape[-1]):
+        inters = (y_pred[..., i] * y_true[..., i]).sum()
+        union = (y_pred[..., i] + y_true[..., i]).sum() - inters
+        iou_sum += inters / union

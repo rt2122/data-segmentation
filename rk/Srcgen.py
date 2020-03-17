@@ -121,7 +121,7 @@ def gen_train(n_src, max_rad, max_n, shape, d_noise, n_out=None, scale_mult=1, s
     while 4:
         X = []
         Y = []
-        for j in range(steps):
+        for _ in range(steps):
             if n_out is None:
                 n_out = n_src
             n_noise = int(d_noise * shape[0] * shape[1])
