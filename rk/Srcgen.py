@@ -39,11 +39,14 @@ def gen_gauss_dots(n_dots, xy_range, scale, mu=0, sigma=1, re_random=True):
 
 class Src: #добавить генерацию протяженного объекта
 
+    scale_mult = 1
+
     def __init__(self, x, y, max_rad, max_n, noise=False):
         self.x = x
         self.y = y
         #self.rad = np.random.randint(2, max_rad + 1) #Poiss lambda - num ph 
-        self.rad = max_rad
+        #self.rad = max_rad
+        self.rad = poisson.rvs(mu=max_rad)
         self.n = poisson.rvs(mu=max_n)
         self.ph = None
         self.noise = noise
@@ -51,12 +54,14 @@ class Src: #добавить генерацию протяженного объ�
             self.rad = max_rad
             self.n = max_n
 
-    def gen_ph(self, label, scale=1, shape=None):
+    def gen_ph(self, label, scale=3, shape=None):
+        if not self.noise:
+            scale *= Src.scale_mult
         xy_range = [[self.x - self.rad, self.x + self.rad + 1], 
                     [self.y - self.rad, self.y + self.rad + 1]]
         if self.noise:
             xy_range = [[0, shape[0]], [0, shape[1]]]
-        coords = gen_gauss_dots(self.n, xy_range, scale)
+        coords = gen_gauss_dots(self.n, xy_range, scale, re_random=self.noise, sigma=self.rad // 20)
         if shape is not None:
             coords = np.array([[x, y] for [x, y] in coords 
                 if x in range(shape[0]) and y in range(shape[1])])
@@ -107,12 +112,12 @@ def gen_ph_map(srcs, shape, n_noise, n_ph):
     return all_ph
 
 def gen_all(n_src, max_rad, max_n, shape, n_noise):
-    print(n_noise)
     srcs, n_ph = gen_src(n_src, max_rad, max_n, shape)
     ph_map = gen_ph_map(srcs, shape, n_noise, n_ph) 
     return ph_map, srcs
 
-def gen_train(n_src, max_rad, max_n, shape, d_noise, n_out=None):
+def gen_train(n_src, max_rad, max_n, shape, d_noise, n_out=None, scale_mult=1):
+    Src.scale_mult = scale_mult
     while 4:
         if n_out is None:
             n_out = n_src
@@ -130,16 +135,16 @@ def gen_train(n_src, max_rad, max_n, shape, d_noise, n_out=None):
 
 def random_colour_circles(Y):
 
-    y_pic = np.zeros(list(Y.shape)[:-1] + [3], np.uint8)
+    y_pic = np.zeros(list(Y.shape)[:-1] + [3], np.int32)
 
     for i in range(Y.shape[-1]):
         R = rnd.randint(0, 255)
         G = rnd.randint(0, 255)
         B = rnd.randint(0, 255)
 
-        y_pic[0, :, :, 0] += R * Y[0, :, :, i]
-        y_pic[0, :, :, 1] += G * Y[0, :, :, i]
-        y_pic[0, :, :, 2] += B * Y[0, :, :, i]
+        y_pic[0, :, :, 0] += (R * Y[0, :, :, i]).astype(np.int32)
+        y_pic[0, :, :, 1] += (G * Y[0, :, :, i]).astype(np.int32)
+        y_pic[0, :, :, 2] += (B * Y[0, :, :, i]).astype(np.int32)
     np.clip(y_pic, 0, 255, y_pic)
     return y_pic[0]
 
@@ -167,6 +172,6 @@ def show_x_y(X, Y, ans=None, num=0):
 
 rnd.seed(0)
 
-for X, Y in gen_train(25, 10, 20, (512, 512, 1), 0.05):
+for X, Y in gen_train(12, 50, 120, (512, 512, 1), 0.02, scale_mult=4):
     show_x_y(X, Y)
     break
