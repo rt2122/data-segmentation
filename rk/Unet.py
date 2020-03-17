@@ -10,10 +10,18 @@ from tensorflow.keras.layers import Activation
 from tensorflow.keras.activations import relu, sigmoid
 from tensorflow.keras.layers import UpSampling2D
 from tensorflow.keras.losses import binary_crossentropy, categorical_crossentropy, sparse_categorical_crossentropy
-from keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.layers import BatchNormalization
+from tensorflow.keras import backend as K
 
-def unet(input_size = (2048,2048,4), filters=64, blocks=4, output_layers=50):
+def iou(y_pred, y_true):
+    iou_sum = 0
+    for i in range(y_true.shape[-1]):
+        inters = K.sum((y_pred[..., i] * y_true[..., i]))
+        union = K.sum((y_pred[..., i] + y_true[..., i])) - inters
+        iou_sum += inters / union
+    return iou_sum
+
+def unet(input_size = (512,512,1), filters=32, blocks=3, output_layers=50):
     encoder = []
     inputs = Input(input_size)
     prev = inputs
@@ -50,13 +58,7 @@ def unet(input_size = (2048,2048,4), filters=64, blocks=4, output_layers=50):
     prev = Activation(sigmoid)(prev)
     
     model = Model(inputs=inputs, outputs=prev)
-    model.compile(optimizer = Adam(lr = 1e-4), loss = categorical_crossentropy, metrics = ['accuracy'])
+    model.compile(optimizer = Adam(lr = 1e-4), loss = categorical_crossentropy, metrics = ['accuracy', iou])
     
     return model
-
-def iou(y_pred, y_true):
-    iou_sum = 0
-    for i in range(y_pred.shape[-1]):
-        inters = (y_pred[..., i] * y_true[..., i]).sum()
-        union = (y_pred[..., i] + y_true[..., i]).sum() - inters
-        iou_sum += inters / union
+model = unet()
