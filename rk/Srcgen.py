@@ -4,17 +4,22 @@ from matplotlib import pyplot as plt
 from skimage.draw import circle
 from skimage.io import imshow
 from scipy.stats import poisson
+from time import time, strftime
+import threading
+
 
 def gen_gauss_dots(n_dots, xy_range, scale, mu=0, sigma=1, re_random=True):
 
     ''' xy_range: [[x_st, x_en], [y_st, y_en]] '''
-    xy_range = np.array(xy_range).astype(np.int64)
 
+
+    xy_range = np.array(xy_range).astype(np.int64)
     res = []
     for i in range(n_dots):
         res.append([rnd.gauss(mu, sigma), rnd.gauss(mu, sigma)])
-    
     res = np.array(res)
+
+
     res *= scale
     res[:, 0] += xy_range[0].mean()
     res[:, 1] += xy_range[1].mean()
@@ -40,6 +45,8 @@ class Src: #добавить генерацию протяженного объ�
         #self.rad = np.random.randint(2, max_rad + 1) #Poiss lambda - num ph 
         self.rad = max_rad
         self.n = poisson.rvs(mu=max_n)
+        self.ph = None
+        self.noise = noise
         if noise:
             self.rad = max_rad
             self.n = max_n
@@ -47,6 +54,8 @@ class Src: #добавить генерацию протяженного объ�
     def gen_ph(self, label, scale=1, shape=None):
         xy_range = [[self.x - self.rad, self.x + self.rad + 1], 
                     [self.y - self.rad, self.y + self.rad + 1]]
+        if self.noise:
+            xy_range = [[0, shape[0]], [0, shape[1]]]
         coords = gen_gauss_dots(self.n, xy_range, scale)
         if shape is not None:
             coords = np.array([[x, y] for [x, y] in coords 
@@ -55,34 +64,53 @@ class Src: #добавить генерацию протяженного объ�
             return None
 
         labels = np.array([label] * len(coords)).reshape(len(coords), 1)
-        return np.hstack([coords, labels])
+        self.ph = np.hstack([coords, labels])
 
 
 def gen_src(n_src, max_rad, max_n, shape):
     coords = gen_gauss_dots(n_dots=n_src, xy_range=[[0, shape[0]], [0, shape[1]]], 
             scale=max(shape) * 4) 
     srcs = []
+    n_ph = 0
     for [x, y] in coords:
         srcs.append(Src(x, y, max_rad, max_n))
-    return np.array(srcs)
+        n_ph += srcs[-1].n
+    return np.array(srcs), n_ph
 
-def gen_ph_map(srcs, shape, n_noise):
-    all_ph = None 
+def gen_ph_map(srcs, shape, n_noise, n_ph):
+
+    class PhotonThread(threading.Thread):
+        def __init__(self, i, srcs, shape, scale=1):
+            threading.Thread.__init__(self)
+            self.i = i
+            self.srcs = srcs
+            self.shape = shape
+            self.scale = scale
+
+        def run(self):
+            self.srcs[self.i].gen_ph(self.i, shape=self.shape, scale=self.scale)
+
     for i in range(len(srcs)):
-        ph = srcs[i].gen_ph(i, shape=shape)
-        if not ph is None:
-            if all_ph is None:
-                all_ph = ph
-            else:
-               all_ph = np.vstack([all_ph, ph])
-    
-    noise = Src(shape[0] // 2, shape[1] // 2, max_rad = max(shape) * 4, max_n=n_noise, noise=True) 
-    all_ph = np.vstack([all_ph, noise.gen_ph(len(srcs), scale=max(shape) * 440, shape=shape)])
+        t = PhotonThread(i, srcs, shape)
+        t.start()
+
+    all_ph = []
+    for i in range(len(srcs)):
+        if not (srcs[i].ph is None):
+            all_ph.append(srcs[i].ph)
+
+    noise = Src(shape[0] // 2, shape[1] // 2, max_rad = max(shape) // 2, max_n=n_noise, noise=True) 
+    noise.gen_ph(len(srcs), scale=max(shape) * 440, shape=shape)
+    all_ph.append(noise.ph)
+    all_ph = np.vstack(all_ph)
+
     return all_ph
 
 def gen_all(n_src, max_rad, max_n, shape, n_noise):
-    srcs = gen_src(n_src, max_rad, max_n, shape)
-    return gen_ph_map(srcs, shape, n_noise), srcs
+    print(n_noise)
+    srcs, n_ph = gen_src(n_src, max_rad, max_n, shape)
+    ph_map = gen_ph_map(srcs, shape, n_noise, n_ph) 
+    return ph_map, srcs
 
 def gen_train(n_src, max_rad, max_n, shape, d_noise, n_out=None):
     while 4:
@@ -115,16 +143,16 @@ def random_colour_circles(Y):
     np.clip(y_pic, 0, 255, y_pic)
     return y_pic[0]
 
-def show_x_y(X, Y, ans=None):
+def show_x_y(X, Y, ans=None, num=0):
     if ans is None:
-        plt.figure(num=0, figsize=(12, 6))
+        plt.figure(num=num, figsize=(12, 6))
         fig, axes = plt.subplots(1, 2, num=0)
         axes[0].imshow(X[0, :, :, 0] * 255)
         axes[0].set_title("Карта расположения фотонов")
         axes[1].imshow(random_colour_circles(Y))
         axes[1].set_title("Источники")
     else:
-        plt.figure(num=0, figsize=(12, 6))
+        plt.figure(num=num, figsize=(12, 6))
         fig, axes = plt.subplots(1, 3, num=0)
         axes[0].imshow(X[0, :, :, 0] * 255)
         axes[0].set_title("Карта расположения фотонов")
@@ -137,5 +165,8 @@ def show_x_y(X, Y, ans=None):
 
 
 
-
 rnd.seed(0)
+
+for X, Y in gen_train(25, 10, 20, (512, 512, 1), 0.05):
+    show_x_y(X, Y)
+    break
