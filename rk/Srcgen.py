@@ -132,7 +132,7 @@ def gen_train(n_src, max_rad, max_n, shape, d_noise, n_out=None, scale_mult=1, s
             for ph in phs:
                 x[ph[0], ph[1], 0] = 1
             for i in range(n_src):
-                c = circle(srcs[i].x, srcs[i].y, srcs[i].rad, list(shape)[:-1])
+                c = circle(srcs[i].x, srcs[i].y, srcs[i].rad // 2, list(shape)[:-1])
                 y[:, :, i][c] = 1
             X.append(x)
             Y.append(y)
