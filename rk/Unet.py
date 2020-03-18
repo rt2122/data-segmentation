@@ -68,7 +68,7 @@ def unet(input_size = (512,512,1), filters=32, blocks=3, output_layers=50, weigh
         pt = Model(inputs=inputs, outputs=prev)
         pt.load_weights(weights)
 
-    prev = Conv2D(output_layers, kernel_size=3)(prev)
+    prev = Conv2D(output_layers, kernel_size=3, padding='same')(prev)
     prev = Activation(sigmoid)(prev)
     
     model = Model(inputs=inputs, outputs=prev)
@@ -76,3 +76,5 @@ def unet(input_size = (512,512,1), filters=32, blocks=3, output_layers=50, weigh
     
     return model
 
+model=unet()
+model.summary()
