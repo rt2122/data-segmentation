@@ -16,10 +16,19 @@ from tensorflow.keras import backend as K
 def iou(y_pred, y_true):
     iou_sum = 0
     for i in range(y_true.shape[-1]):
-        inters = K.sum((y_pred[..., i] * y_true[..., i]))
+        inters = K.sum(y_pred[..., i] * y_true[..., i])
         union = K.sum((y_pred[..., i] + y_true[..., i])) - inters
         iou_sum += inters / union
     return iou_sum
+
+def dice(y_pred, y_true, eps=0.1):
+    dice_sum = 0
+    for i in range(y_true.shape[-1]):
+        inters = K.sum(y_pred[..., i] * y_true[..., i])
+        union = K.sum((y_pred[..., i] + y_true[..., i])) - inters
+        dice_sum += K.mean((2 * inters + eps) / (union + eps))
+    return dice_sum
+
 
 def unet(input_size = (512,512,1), filters=32, blocks=3, output_layers=50):
     encoder = []
@@ -58,7 +67,8 @@ def unet(input_size = (512,512,1), filters=32, blocks=3, output_layers=50):
     prev = Activation(sigmoid)(prev)
     
     model = Model(inputs=inputs, outputs=prev)
-    model.compile(optimizer = Adam(lr = 1e-4), loss = categorical_crossentropy, metrics = ['accuracy', iou])
+    model.compile(optimizer = Adam(lr = 1e-4), loss = categorical_crossentropy, metrics = ['accuracy', iou, dice])
     
     return model
+
 model = unet()
