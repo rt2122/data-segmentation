@@ -176,7 +176,8 @@ def show_x_y(X, Y, ans=None, num=0):
 
 
 rnd.seed(0)
-
+'''
 for X, Y in gen_train(12, 50, 120, (512, 512, 1), 0.02, scale_mult=4):
     show_x_y(X, Y)
     break
+'''

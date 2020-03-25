@@ -75,6 +75,3 @@ def unet(input_size = (512,512,1), filters=32, blocks=3, output_layers=50, weigh
     model.compile(optimizer = Adam(lr = 1e-4), loss = categorical_crossentropy, metrics = ['accuracy', iou, dice])
     
     return model
-
-model=unet()
-model.summary()
