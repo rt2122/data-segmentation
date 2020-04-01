@@ -5,7 +5,7 @@
     top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
 
 \begin{document}
-Отчет по курсовой работе за неделю (исправленный)\\
+Отчет по курсовой работе за неделю\\
 Дата: 02.4.2020\\
 Научные руководители: Герасимов С.В., Мещеряков А.В.\\
 Студент: Немешаева Алиса\\
@@ -24,9 +24,22 @@
     \item Обработаны и сохранены данные MCXC: \\
         \begin{itemize}
             \item https://github.com/rt2122/data-segmentation/blob/master/data\_src/mcxcwp.csv \\
-            \item Из данных каталога MCXC удалены объекты, которые уже содержатся в каталоге Planck.\\
+            \item Из данных каталога MCXC удалены объекты, которые уже содержатся в каталоге 
+                Planck (по названиям объектов).\\
         \end{itemize}
-    \item 
+    \item Обработаны и сохранены данные RedMAPPer: \\
+        \begin{itemize}
+            \item https://github.com/rt2122/data-segmentation/blob/master/data\_src/rm30\_15130.csv \\
+            \item https://github.com/rt2122/data-segmentation/blob/master/data\_src/rm50\_4711.csv \\
+            \item Удалены объекты, содержащиеся в каталоге Planck (по названиям). \\
+            \item Удалены объекты, содержащиеся в каталоге MCXC (в каталоге MCXC нет имен объектов 
+                относительно RedMAPPer и наоборот, поэтому объекты исключались по расстоянию между ними). \\
+            \item По параметру $\lambda$ каталог преобразован в два отдельных каталога: \\
+                \begin{itemize}
+                    \item $\lambda > 30 $\\
+                    \item $\lambda > 50 $\\
+                \end{itemize}
+        \end{itemize}
 
 \end{enumerate}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.28)  1 APR 2020 12:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.28)  1 APR 2020 13:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -688,29 +688,217 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
-[1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./r020420.aux) ) 
+Underfull \hbox (badness 10000) in paragraph at lines 27--29
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--37
+
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 37.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 37.
+
+LaTeX Warning: Command \CYRP invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyro invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyrp invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyra invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyrr invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyra invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyrm invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyre invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyrt invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyrr invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyru invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyrk invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyra invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyrt invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyra invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyrl invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyro invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyrg invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyrp invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyrr invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyre invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyro invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyrb invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyrr invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyra invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyrz invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyro invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyrv invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyra invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyrn invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyrv invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyrd invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyrv invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyra invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyro invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyrt invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyrd invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyre invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyrl invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyrsftsn invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyrn invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyrery invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyrh invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyrk invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyra invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyrt invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyra invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyrl invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyro invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyrg invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \cyra invalid in math mode on input line 37.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.38                 \begin{itemize}
+                                    
+? 
+! Emergency stop.
+<inserted text> 
+                $
+l.38                 \begin{itemize}
+                                    
+End of file on the terminal!
+
+ 
 Here is how much of TeX's memory you used:
- 2178 strings out of 492982
- 25347 string characters out of 6134896
- 93154 words of memory out of 5000000
- 5765 multiletter control sequences out of 15000+600000
+ 2173 strings out of 492982
+ 25312 string characters out of 6134896
+ 95154 words of memory out of 5000000
+ 5764 multiletter control sequences out of 15000+600000
  4437 words of font info for 15 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 23i,4n,23p,244b,214s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/sha
-re/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/publ
-ic/cm-super/sfrm1000.pfb>
-Output written on r020420.pdf (1 page, 34899 bytes).
-PDF statistics:
- 17 PDF objects out of 1000 (max. 8388607)
- 11 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 23i,2n,23p,244b,214s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
