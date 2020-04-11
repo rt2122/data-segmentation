@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.28)  11 APR 2020 01:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.28)  11 APR 2020 23:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -654,9 +654,9 @@ Package babel Info: Redefining russian shorthand "~
 
 
 ]
-\openout2 = `2-annotation.aux'.
+\openout2 = `21-annotation.aux'.
 
- (./2-annotation.tex
+ (./21-annotation.tex
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 1.
 Package babel Info: Redefining russian shorthand "~
@@ -674,15 +674,15 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.20 \include{2-annotation}
-                            [1
+l.20 \include{21-annotation}
+                             [1
 
 
 
 ]
-\openout2 = `2-intro.aux'.
+\openout2 = `22-intro.aux'.
 
- (./2-intro.tex
+ (./22-intro.tex
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 1.
 Package babel Info: Redefining russian shorthand "~
@@ -860,7 +860,7 @@ Package babel Info: Redefining russian shorthand "~
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 41.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 41.
  (./0-main.aux (./11-title-page.aux)
-(./2-annotation.aux) (./2-intro.aux) (./31-chapter-one.aux)
+(./21-annotation.aux) (./22-intro.aux) (./31-chapter-one.aux)
 (./32-chapter-two.aux) (./33-chapter-three.aux) (./34-chapter-four.aux)
 (./4-conclusion.aux) (./5-biblio.aux) (./61-appendix.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 41.
@@ -874,8 +874,8 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 41.
  ) 
 Here is how much of TeX's memory you used:
- 13228 strings out of 492982
- 186456 string characters out of 6134896
+ 13230 strings out of 492982
+ 186485 string characters out of 6134896
  262985 words of memory out of 5000000
  16482 multiletter control sequences out of 15000+600000
  14108 words of font info for 41 fonts, out of 8000000 for 9000
