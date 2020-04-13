@@ -9,8 +9,15 @@
 
 \bibitem{Bonjean}
 \selectlanguageifdefined{russian}
-\BibEmph{V. Bonjean} Deep learning for Sunyaev–Zel’dovich detection in Planck
+\BibEmph{V. Bonjean} \href{https://www.aanda.org/articles/aa/full_html/2020/02/aa36919-19/aa36919-19.html}{Deep learning for Sunyaev–Zel’dovich detection in Planck}
 \newblock Astronomy \& Astrophysics
 
+\bibitem{Panstarrs}
+\selectlanguageifdefined{russian}
+\href{https://mastweb.stsci.edu/ps1casjobs/home.aspx}{PanSTARRS1 (PS1) Catalog Archive Server Jobs System (CasJobs) service}
+
+\bibitem{Healpix}
+\selectlanguageifdefined{russian}
+\href{https://healpix.sourceforge.io/}{HEALPix - Features}
 
 \end{thebibliography}
