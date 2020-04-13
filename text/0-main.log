@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.28)  13 APR 2020 21:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.28)  14 APR 2020 00:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -805,6 +805,22 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 1.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--8
+
+ []
+
+
+Underfull \hbox (badness 1231) in paragraph at lines 9--12
+\T2A/cmr/m/n/12 ко^^?ли^^?че^^?ством ка^^?на^^?лов, сов^^?па^^?да^^?ю^^?щих с к
+о^^?ли^^?че^^?ством ис^^?сле^^?ду^^?е^^?мых па^^?ра^^?мет^^?ров у
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--12
+
+ []
+
 )
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 27.
@@ -814,8 +830,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 27.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 27.
-
-[6
+ [6
 
 
 
@@ -827,6 +842,71 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 1.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--6
+
+ []
+
+<inc/img/sym0.png, id=111, 325.215pt x 281.05pt>
+File: inc/img/sym0.png Graphic file (type png)
+<use inc/img/sym0.png>
+Package pdftex.def Info: inc/img/sym0.png  used on input line 11.
+(pdftex.def)             Requested size: 145.68144pt x 125.90096pt.
+<inc/img/sym1.png, id=112, 325.215pt x 281.05pt>
+File: inc/img/sym1.png Graphic file (type png)
+<use inc/img/sym1.png>
+Package pdftex.def Info: inc/img/sym1.png  used on input line 14.
+(pdftex.def)             Requested size: 145.68144pt x 125.90096pt.
+<inc/img/sym2.png, id=113, 290.08376pt x 281.05pt>
+File: inc/img/sym2.png Graphic file (type png)
+<use inc/img/sym2.png>
+Package pdftex.def Info: inc/img/sym2.png  used on input line 17.
+(pdftex.def)             Requested size: 131.1124pt x 127.02882pt.
+
+Underfull \hbox (badness 1460) in paragraph at lines 24--26
+[]\T2A/cmr/m/n/12 Выше при^^?ве^^?ден при^^?мер ра^^?бо^^?ты си^^?му^^?ля^^?ции
+ а так^^?же при^^?мер сег^^?мен^^?ти^^?
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--26
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--40
+
+ []
+
+<inc/img/patch0.png, id=114, 648.4225pt x 372.39125pt>
+File: inc/img/patch0.png Graphic file (type png)
+<use inc/img/patch0.png>
+Package pdftex.def Info: inc/img/patch0.png  used on input line 43.
+(pdftex.def)             Requested size: 200.30852pt x 115.03665pt.
+<inc/img/patch1.png, id=115, 648.4225pt x 372.39125pt>
+File: inc/img/patch1.png Graphic file (type png)
+<use inc/img/patch1.png>
+Package pdftex.def Info: inc/img/patch1.png  used on input line 46.
+(pdftex.def)             Requested size: 200.30852pt x 115.03665pt.
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-33.def
+File: uni-33.def 2013/05/13 UCS: Unicode data U+2100..U+21FF
+)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+
+ []
+
+<inc/img/pix2pic0.png, id=116, 648.4225pt x 372.39125pt>
+File: inc/img/pix2pic0.png Graphic file (type png)
+<use inc/img/pix2pic0.png>
+Package pdftex.def Info: inc/img/pix2pic0.png  used on input line 56.
+(pdftex.def)             Requested size: 364.19667pt x 209.16272pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 )
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 28.
@@ -840,10 +920,20 @@ Package babel Info: Redefining russian shorthand "~
 
 
 
-]
+ <./inc/img/sym0.png> <./inc/img/sym1.png> <./inc/img/sym2.png>]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language append on input line 28.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language append on input line 28.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language append on input line 28.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language append on input line 28.
+ [8 <./inc/img/patch0.png> <./inc/img/patch1.png> <./inc/img/pix2pic0.png>]
 \openout2 = `4-conclusion.aux'.
 
- (./4-conclusion.tex
+
+(./4-conclusion.tex
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 1.
 Package babel Info: Redefining russian shorthand "~
@@ -857,20 +947,20 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 33.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 33.
- [8
+ [9
 
 
 
 ]
 \openout2 = `5-biblio.aux'.
 
- (./5-biblio.tex
-(./0-main.bbl
+ (./5-biblio.tex (./0-main.bbl
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 1.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 1.
- (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
+
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
 Underfull \hbox (badness 1502) in paragraph at lines 12--14
@@ -887,7 +977,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 35.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 35.
- [9
+ [10
 
 
 
@@ -901,36 +991,35 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 41.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 41.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 41.
 Package rerunfilecheck Info: File `0-main.out' has not changed.
-(rerunfilecheck)             Checksum: 02370D9562E1ED639404139FCDBF6EC7;2052.
+(rerunfilecheck)             Checksum: 7AA201B97BA0E0C0FB579A821F7DF10D;2053.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 41.
  ) 
 Here is how much of TeX's memory you used:
- 13490 strings out of 492982
- 189463 string characters out of 6134896
- 264489 words of memory out of 5000000
- 16737 multiletter control sequences out of 15000+600000
+ 13731 strings out of 492982
+ 192457 string characters out of 6134896
+ 266489 words of memory out of 5000000
+ 16963 multiletter control sequences out of 15000+600000
  14108 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,7n,44p,957b,653s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 50i,8n,44p,1206b,653s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf/fonts/type1/public/
-cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pf
-b></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/
-fonts/type1/public/cm-super/sfrm2488.pfb></usr/share/texmf/fonts/type1/public/c
-m-super/sfti1200.pfb>
-Output written on 0-main.pdf (11 pages, 263024 bytes).
+/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx
+1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share
+/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/p
+ublic/cm-super/sfrm2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1
+200.pfb>
+Output written on 0-main.pdf (12 pages, 322404 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
- 134 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 95 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 197 PDF objects out of 1000 (max. 8388607)
+ 151 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 500000)
+ 125 words of extra memory for PDF output out of 10000 (max. 10000000)
 
