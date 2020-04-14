@@ -20,4 +20,7 @@
 \selectlanguageifdefined{russian}
 \href{https://healpix.sourceforge.io/}{HEALPix - Features}
 
+\bibitem{Unet}
+\BibEmph{O. Ronneberger, P. Fischer, T. Brox} \href{https://arxiv.org/abs/1505.04597}{U-Net: Convolutional Networks for Biomedical Image Segmentation}
+
 \end{thebibliography}
