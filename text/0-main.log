@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.28)  14 APR 2020 14:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.28)  15 APR 2020 16:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -688,12 +688,17 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 13--15
+Underfull \hbox (badness 10000) in paragraph at lines 13--20
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--23
+Underfull \hbox (badness 10000) in paragraph at lines 21--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--31
 
  []
 
@@ -710,10 +715,10 @@ Package babel Info: Redefining russian shorthand "~
 
 
 ]
-<inc/img/unet0.png, id=78, 572.1375pt x 381.425pt>
+<inc/img/unet0.png, id=91, 572.1375pt x 381.425pt>
 File: inc/img/unet0.png Graphic file (type png)
 <use inc/img/unet0.png>
-Package pdftex.def Info: inc/img/unet0.png  used on input line 47.
+Package pdftex.def Info: inc/img/unet0.png  used on input line 61.
 (pdftex.def)             Requested size: 318.66948pt x 212.44998pt.
 )
 Package babel Info: Redefining russian shorthand "|
@@ -732,11 +737,6 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 1.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 1.
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--6
-
- []
-
 )
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 25.
@@ -753,55 +753,82 @@ Package babel Info: Redefining russian shorthand "~
 ]
 \openout2 = `32-chapter-two.aux'.
 
- (./32-chapter-two.tex
+
+(./32-chapter-two.tex
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 1.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--6
+Underfull \hbox (badness 10000) in paragraph at lines 7--9
 
  []
 
-<inc/img/healpix0.jpg, id=93, 514.92375pt x 511.9125pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--26
+
+ []
+
+<inc/img/healpix0.jpg, id=116, 514.92375pt x 511.9125pt>
 File: inc/img/healpix0.jpg Graphic file (type jpg)
 <use inc/img/healpix0.jpg>
-Package pdftex.def Info: inc/img/healpix0.jpg  used on input line 23.
+Package pdftex.def Info: inc/img/healpix0.jpg  used on input line 30.
 (pdftex.def)             Requested size: 142.26378pt x 141.4286pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--30
-
- []
-
-
-Underfull \hbox (badness 2469) in paragraph at lines 31--35
-[]\T2A/cmr/m/n/12 Случайным об^^?ра^^?зом в со^^?от^^?вет^^?ству^^?ю^^?хих об^^
-?ла^^?стях раз^^?би^^?е^^?ния HEALPix
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--35
+Underfull \hbox (badness 10000) in paragraph at lines 34--37
 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 35.
+(babel)             in language append on input line 38.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 35.
+(babel)             in language append on input line 38.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 35.
+(babel)             in language append on input line 38.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 35.
+(babel)             in language append on input line 38.
 [5
 
 
 
  <./inc/img/healpix0.jpg>]
-<inc/img/sz0.png, id=108, 1392.20125pt x 492.84125pt>
+Underfull \hbox (badness 2469) in paragraph at lines 38--42
+[]\T2A/cmr/m/n/12 Случайным об^^?ра^^?зом в со^^?от^^?вет^^?ству^^?ю^^?хих об^^
+?ла^^?стях раз^^?би^^?е^^?ния HEALPix
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--42
+
+ []
+
+<inc/img/sz0.png, id=132, 1392.20125pt x 492.84125pt>
 File: inc/img/sz0.png Graphic file (type png)
 <use inc/img/sz0.png>
-Package pdftex.def Info: inc/img/sz0.png  used on input line 38.
+Package pdftex.def Info: inc/img/sz0.png  used on input line 45.
 (pdftex.def)             Requested size: 426.79134pt x 151.07965pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
+
+ []
+
+
+Underfull \hbox (badness 1371) in paragraph at lines 52--61
+\T2A/cmr/m/n/12 пе^^?ре^^?обу^^?че^^?ния. По^^?сле всех бло^^?ков де^^?ко^^?ди^
+^?ров^^?щи^^?ка до^^?бав^^?ля^^?ет^^?ся слой ак^^?ти^^?ва^^?ции
+ []
+
+
+Underfull \hbox (badness 1596) in paragraph at lines 52--61
+\T2A/cmr/m/n/12 сиг^^?мо^^?и^^?ды для по^^?сле^^?ду^^?ю^^?ще^^?го ис^^?поль^^?з
+о^^?ва^^?ния кросс-^^?энтро^^?пии как loss-^^?функ^^?ции.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--61
+
+ []
+
 )
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 26.
@@ -812,6 +839,15 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 26.
  [6 <./inc/img/sz0.png>]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language append on input line 26.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language append on input line 26.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language append on input line 26.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language append on input line 26.
+ [7]
 \openout2 = `33-chapter-three.aux'.
 
  (./33-chapter-three.tex
@@ -825,17 +861,61 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--8
  []
 
 
-Underfull \hbox (badness 1231) in paragraph at lines 9--12
+Underfull \hbox (badness 10000) in paragraph at lines 19--22
+
+ []
+
+
+Underfull \hbox (badness 1742) in paragraph at lines 23--30
+\T2A/cmr/m/n/12 ли^^?бо ис^^?поль^^?зо^^?вать их для ауг^^?мен^^?та^^?ции: каж^
+^?дый раз при пе^^?ре^^?но^^?се зна^^?че^^?ния
+ []
+
+
+Underfull \hbox (badness 1430) in paragraph at lines 23--30
+\T2A/cmr/m/n/12 ка^^?кого-^^?либо па^^?ра^^?мет^^?ра, при^^?бав^^?лять к нему с
+лу^^?чай^^?ное зна^^?че^^?ние из диа^^?па^^?зо^^?на
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--30
+
+ []
+
+
+Underfull \hbox (badness 1231) in paragraph at lines 31--34
 \T2A/cmr/m/n/12 ко^^?ли^^?че^^?ством ка^^?на^^?лов, сов^^?па^^?да^^?ю^^?щих с к
 о^^?ли^^?че^^?ством ис^^?сле^^?ду^^?е^^?мых па^^?ра^^?мет^^?ров у
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--12
+Underfull \hbox (badness 10000) in paragraph at lines 31--34
 
  []
 
-)
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--37
+
+ []
+
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language append on input line 38.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language append on input line 38.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language append on input line 38.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language append on input line 38.
+[8
+
+
+
+])
+Underfull \hbox (badness 1147) in paragraph at lines 38--27
+\T2A/cmr/m/n/12 есть у пер^^?вой вер^^?сии ней^^?ро^^?се^^?те^^?вой мо^^?де^^?л
+и бу^^?дет 5 вход^^?ных сло^^?јв. Зна^^?че^^?ния
+ []
+
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 27.
 Package babel Info: Redefining russian shorthand "~
@@ -844,11 +924,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 27.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 27.
- [7
-
-
-
-]
+[9]
 \openout2 = `34-chapter-four.aux'.
 
  (./34-chapter-four.tex
@@ -856,85 +932,96 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 1.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 1.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language append on input line 4.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language append on input line 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--6
+Underfull \hbox (badness 10000) in paragraph at lines 6--8
 
  []
 
-<inc/img/sym0.png, id=122, 325.215pt x 281.05pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--13
+
+ []
+
+<inc/img/sym0.png, id=163, 325.215pt x 281.05pt>
 File: inc/img/sym0.png Graphic file (type png)
 <use inc/img/sym0.png>
-Package pdftex.def Info: inc/img/sym0.png  used on input line 11.
+Package pdftex.def Info: inc/img/sym0.png  used on input line 16.
 (pdftex.def)             Requested size: 145.68144pt x 125.90096pt.
-<inc/img/sym1.png, id=123, 325.215pt x 281.05pt>
+<inc/img/sym1.png, id=164, 325.215pt x 281.05pt>
 File: inc/img/sym1.png Graphic file (type png)
 <use inc/img/sym1.png>
-Package pdftex.def Info: inc/img/sym1.png  used on input line 14.
+Package pdftex.def Info: inc/img/sym1.png  used on input line 19.
 (pdftex.def)             Requested size: 145.68144pt x 125.90096pt.
-<inc/img/sym2.png, id=124, 290.08376pt x 281.05pt>
+<inc/img/sym2.png, id=165, 290.08376pt x 281.05pt>
 File: inc/img/sym2.png Graphic file (type png)
 <use inc/img/sym2.png>
-Package pdftex.def Info: inc/img/sym2.png  used on input line 17.
+Package pdftex.def Info: inc/img/sym2.png  used on input line 22.
 (pdftex.def)             Requested size: 131.1124pt x 127.02882pt.
 
-Underfull \hbox (badness 1460) in paragraph at lines 24--26
+Underfull \hbox (badness 1460) in paragraph at lines 29--31
 []\T2A/cmr/m/n/12 Выше при^^?ве^^?ден при^^?мер ра^^?бо^^?ты си^^?му^^?ля^^?ции
  а так^^?же при^^?мер сег^^?мен^^?ти^^?
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--26
+Underfull \hbox (badness 10000) in paragraph at lines 29--31
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--40
-
- []
-
-<inc/img/patch0.png, id=125, 648.4225pt x 372.39125pt>
-File: inc/img/patch0.png Graphic file (type png)
-<use inc/img/patch0.png>
-Package pdftex.def Info: inc/img/patch0.png  used on input line 43.
-(pdftex.def)             Requested size: 200.30852pt x 115.03665pt.
-<inc/img/patch1.png, id=126, 648.4225pt x 372.39125pt>
-File: inc/img/patch1.png Graphic file (type png)
-<use inc/img/patch1.png>
-Package pdftex.def Info: inc/img/patch1.png  used on input line 46.
-(pdftex.def)             Requested size: 200.30852pt x 115.03665pt.
-(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-33.def
-File: uni-33.def 2013/05/13 UCS: Unicode data U+2100..U+21FF
-)
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
-
- []
-
-<inc/img/pix2pic0.png, id=127, 648.4225pt x 372.39125pt>
-File: inc/img/pix2pic0.png Graphic file (type png)
-<use inc/img/pix2pic0.png>
-Package pdftex.def Info: inc/img/pix2pic0.png  used on input line 56.
-(pdftex.def)             Requested size: 364.19667pt x 209.16272pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-)
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 28.
+(babel)             in language append on input line 32.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 28.
+(babel)             in language append on input line 32.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 28.
+(babel)             in language append on input line 41.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 28.
- [8
+(babel)             in language append on input line 41.
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--49
+
+ []
+
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language append on input line 49.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language append on input line 49.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language append on input line 49.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language append on input line 49.
+[10
 
 
 
  <./inc/img/sym0.png> <./inc/img/sym1.png> <./inc/img/sym2.png>]
+<inc/img/patch0.png, id=177, 648.4225pt x 372.39125pt>
+File: inc/img/patch0.png Graphic file (type png)
+<use inc/img/patch0.png>
+Package pdftex.def Info: inc/img/patch0.png  used on input line 52.
+(pdftex.def)             Requested size: 200.30852pt x 115.03665pt.
+<inc/img/patch1.png, id=178, 648.4225pt x 372.39125pt>
+File: inc/img/patch1.png Graphic file (type png)
+<use inc/img/patch1.png>
+Package pdftex.def Info: inc/img/patch1.png  used on input line 55.
+(pdftex.def)             Requested size: 200.30852pt x 115.03665pt.
+
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-33.def
+File: uni-33.def 2013/05/13 UCS: Unicode data U+2100..U+21FF
+)
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+
+ []
+
+<inc/img/pix2pic0.png, id=179, 648.4225pt x 372.39125pt>
+File: inc/img/pix2pic0.png Graphic file (type png)
+<use inc/img/pix2pic0.png>
+Package pdftex.def Info: inc/img/pix2pic0.png  used on input line 65.
+(pdftex.def)             Requested size: 364.19667pt x 209.16272pt.
+)
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 28.
 Package babel Info: Redefining russian shorthand "~
@@ -943,7 +1030,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 28.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 28.
- [9 <./inc/img/patch0.png> <./inc/img/patch1.png> <./inc/img/pix2pic0.png>]
+ [11 <./inc/img/patch0.png> <./inc/img/patch1.png> <./inc/img/pix2pic0.png>]
 \openout2 = `4-conclusion.aux'.
 
 
@@ -961,7 +1048,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 33.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 33.
- [10
+ [12
 
 
 
@@ -991,7 +1078,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language append on input line 35.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 35.
- [11
+ [13
 
 
 
@@ -1005,7 +1092,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 41.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 41.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 41.
 Package rerunfilecheck Info: File `0-main.out' has not changed.
-(rerunfilecheck)             Checksum: E51BD049AAA83449382BABD3182A75D0;2050.
+(rerunfilecheck)             Checksum: 5A165B32641C0D6F8B9519EEC5CC0168;2853.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1013,27 +1100,27 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 41.
  ) 
 Here is how much of TeX's memory you used:
- 13742 strings out of 492982
- 192598 string characters out of 6134896
- 266519 words of memory out of 5000000
- 16968 multiletter control sequences out of 15000+600000
+ 13771 strings out of 492982
+ 192831 string characters out of 6134896
+ 265529 words of memory out of 5000000
+ 16971 multiletter control sequences out of 15000+600000
  14108 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,8n,44p,1206b,653s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 50i,8n,44p,1207b,653s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx
-1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share
-/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/p
-ublic/cm-super/sfrm2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1
-200.pfb>
-Output written on 0-main.pdf (13 pages, 401473 bytes).
+1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share
+/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/p
+ublic/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm2
+488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on 0-main.pdf (15 pages, 429695 bytes).
 PDF statistics:
- 211 PDF objects out of 1000 (max. 8388607)
- 163 compressed objects within 2 object streams
- 42 named destinations out of 1000 (max. 500000)
- 130 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 267 PDF objects out of 1000 (max. 8388607)
+ 215 compressed objects within 3 object streams
+ 68 named destinations out of 1000 (max. 500000)
+ 154 words of extra memory for PDF output out of 10000 (max. 10000000)
 
