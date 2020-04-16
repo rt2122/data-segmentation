@@ -7,20 +7,29 @@
 \ifx\undefined\BibAnnote\long\def\BibAnnote#1{}\else\fi
 \ifx\undefined\BibEmph\def\BibEmph#1{\emph{#1}}\else\fi
 
-\bibitem{Bonjean}
-\selectlanguageifdefined{russian}
-\BibEmph{V. Bonjean} \href{https://www.aanda.org/articles/aa/full_html/2020/02/aa36919-19/aa36919-19.html}{Deep learning for Sunyaev–Zel’dovich detection in Planck}
-\newblock Astronomy \& Astrophysics
+\bibitem{Abell}
+\selectlanguageifdefined{english}
+Abell 2199. ---
+\newblock Wikipedia.
 
 \bibitem{Panstarrs}
-\selectlanguageifdefined{russian}
-\href{https://mastweb.stsci.edu/ps1casjobs/home.aspx}{PanSTARRS1 (PS1) Catalog Archive Server Jobs System (CasJobs) service}
-
-\bibitem{Healpix}
-\selectlanguageifdefined{russian}
-\href{https://healpix.sourceforge.io/}{HEALPix - Features}
+\selectlanguageifdefined{english}
+PanSTARRS1 (PS1) Catalog Archive Server Jobs System (CasJobs) service.
 
 \bibitem{Unet}
-\BibEmph{O. Ronneberger, P. Fischer, T. Brox} \href{https://arxiv.org/abs/1505.04597}{U-Net: Convolutional Networks for Biomedical Image Segmentation}
+\selectlanguageifdefined{english}
+\BibEmph{O.~Ronneberger~P.~Fischer,~T.~Brox}. U-Net: Convolutional Networks for
+  Biomedical Image Segmentation~/ T.~Brox~O.~Ronneberger, P.~Fischer. ---
+\newblock 2015.
+
+\bibitem{Bonjean}
+\selectlanguageifdefined{english}
+\BibEmph{Bonjean,~V.} Deep learning for Sunyaev–Zel’dovich detection in
+  Planck~/ V.~Bonjean. ---
+\newblock Astronomy \& Astrophysics, 2020.
+
+\bibitem{Healpix}
+\selectlanguageifdefined{english}
+HEALPix.
 
 \end{thebibliography}
