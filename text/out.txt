@@ -117,20 +117,19 @@ ntifier (name{page.1}) has been already used, duplicate ignored
                    \relax 
 l.20 \include{21-annotation}
                              [1] (./22-intro.tex
-Underfull \hbox (badness 10000) in paragraph at lines 13--20
+Underfull \hbox (badness 10000) in paragraph at lines 16--26
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--28
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--36
-
-[2 <./inc/img/comparison0.jpg>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [3] [4 <./inc/img/unet0.png (PNG copy)>] (./31-chapter-one.tex) [5]
-(./32-chapter-two.tex
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--34
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--42
+
+[2] [3 <./inc/img/comparison0.jpg>]) [4 <./inc/img/unet0.png (PNG copy)>]
+(./31-chapter-one.tex) [5] (./32-chapter-two.tex
 Underfull \hbox (badness 10000) in paragraph at lines 7--9
 
 
@@ -161,34 +160,26 @@ Underfull \hbox (badness 1596) in paragraph at lines 52--61
 Underfull \hbox (badness 10000) in paragraph at lines 52--61
 
 ) [7 <./inc/img/sz0.png>] [8] (./33-chapter-three.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--8
+Underfull \hbox (badness 10000) in paragraph at lines 10--15
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--22
+Underfull \hbox (badness 10000) in paragraph at lines 26--29
 
 
-Underfull \hbox (badness 1742) in paragraph at lines 23--30
-\T2A/cmr/m/n/12 ли^^?бо ис^^?поль^^?зо^^?вать их для ауг^^?мен^^?та^^?ции: каж^
-^?дый раз при пе^^?ре^^?но^^?се зна^^?че^^?ния
-
-Underfull \hbox (badness 1430) in paragraph at lines 23--30
-\T2A/cmr/m/n/12 ка^^?кого-^^?либо па^^?ра^^?мет^^?ра, при^^?бав^^?лять к нему с
-лу^^?чай^^?ное зна^^?че^^?ние из диа^^?па^^?зо^^?на
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--30
+Underfull \hbox (badness 10000) in paragraph at lines 30--37
 
 
-Underfull \hbox (badness 1231) in paragraph at lines 31--34
+Underfull \hbox (badness 1231) in paragraph at lines 38--41
 \T2A/cmr/m/n/12 ко^^?ли^^?че^^?ством ка^^?на^^?лов, сов^^?па^^?да^^?ю^^?щих с к
 о^^?ли^^?че^^?ством ис^^?сле^^?ду^^?е^^?мых па^^?ра^^?мет^^?ров у
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--34
+Underfull \hbox (badness 10000) in paragraph at lines 38--41
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--37
+Underfull \hbox (badness 10000) in paragraph at lines 42--44
 
 [9])
-Underfull \hbox (badness 1147) in paragraph at lines 38--27
+Underfull \hbox (badness 1147) in paragraph at lines 45--27
 \T2A/cmr/m/n/12 есть у пер^^?вой вер^^?сии ней^^?ро^^?се^^?те^^?вой мо^^?де^^?л
 и бу^^?дет 5 вход^^?ных сло^^?јв. Зна^^?че^^?ния
 [10] (./34-chapter-four.tex
@@ -218,6 +209,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--63
 (./31-chapter-one.aux) (./32-chapter-two.aux) (./33-chapter-three.aux)
 (./34-chapter-four.aux) (./4-conclusion.aux) (./5-biblio.aux))
 
+Package rerunfilecheck Warning: File `0-main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  )
@@ -232,7 +228,7 @@ nts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-
 super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb><
 /usr/share/texmf/fonts/type1/public/cm-super/sfrm2488.pfb></usr/share/texmf/fon
 ts/type1/public/cm-super/sfti1200.pfb>
-Output written on 0-main.pdf (16 pages, 517834 bytes).
+Output written on 0-main.pdf (16 pages, 520214 bytes).
 Transcript written on 0-main.log.
 This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex)
  \write18 enabled.
@@ -353,20 +349,19 @@ ntifier (name{page.1}) has been already used, duplicate ignored
                    \relax 
 l.20 \include{21-annotation}
                              [1] (./22-intro.tex
-Underfull \hbox (badness 10000) in paragraph at lines 13--20
+Underfull \hbox (badness 10000) in paragraph at lines 16--26
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--28
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--36
-
-[2 <./inc/img/comparison0.jpg>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [3] [4 <./inc/img/unet0.png (PNG copy)>] (./31-chapter-one.tex) [5]
-(./32-chapter-two.tex
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--34
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--42
+
+[2] [3 <./inc/img/comparison0.jpg>]) [4 <./inc/img/unet0.png (PNG copy)>]
+(./31-chapter-one.tex) [5] (./32-chapter-two.tex
 Underfull \hbox (badness 10000) in paragraph at lines 7--9
 
 
@@ -397,34 +392,26 @@ Underfull \hbox (badness 1596) in paragraph at lines 52--61
 Underfull \hbox (badness 10000) in paragraph at lines 52--61
 
 ) [7 <./inc/img/sz0.png>] [8] (./33-chapter-three.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--8
+Underfull \hbox (badness 10000) in paragraph at lines 10--15
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--22
+Underfull \hbox (badness 10000) in paragraph at lines 26--29
 
 
-Underfull \hbox (badness 1742) in paragraph at lines 23--30
-\T2A/cmr/m/n/12 ли^^?бо ис^^?поль^^?зо^^?вать их для ауг^^?мен^^?та^^?ции: каж^
-^?дый раз при пе^^?ре^^?но^^?се зна^^?че^^?ния
-
-Underfull \hbox (badness 1430) in paragraph at lines 23--30
-\T2A/cmr/m/n/12 ка^^?кого-^^?либо па^^?ра^^?мет^^?ра, при^^?бав^^?лять к нему с
-лу^^?чай^^?ное зна^^?че^^?ние из диа^^?па^^?зо^^?на
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--30
+Underfull \hbox (badness 10000) in paragraph at lines 30--37
 
 
-Underfull \hbox (badness 1231) in paragraph at lines 31--34
+Underfull \hbox (badness 1231) in paragraph at lines 38--41
 \T2A/cmr/m/n/12 ко^^?ли^^?че^^?ством ка^^?на^^?лов, сов^^?па^^?да^^?ю^^?щих с к
 о^^?ли^^?че^^?ством ис^^?сле^^?ду^^?е^^?мых па^^?ра^^?мет^^?ров у
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--34
+Underfull \hbox (badness 10000) in paragraph at lines 38--41
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--37
+Underfull \hbox (badness 10000) in paragraph at lines 42--44
 
 [9])
-Underfull \hbox (badness 1147) in paragraph at lines 38--27
+Underfull \hbox (badness 1147) in paragraph at lines 45--27
 \T2A/cmr/m/n/12 есть у пер^^?вой вер^^?сии ней^^?ро^^?се^^?те^^?вой мо^^?де^^?л
 и бу^^?дет 5 вход^^?ных сло^^?јв. Зна^^?че^^?ния
 [10] (./34-chapter-four.tex
@@ -468,5 +455,5 @@ nts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-
 super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb><
 /usr/share/texmf/fonts/type1/public/cm-super/sfrm2488.pfb></usr/share/texmf/fon
 ts/type1/public/cm-super/sfti1200.pfb>
-Output written on 0-main.pdf (16 pages, 518145 bytes).
+Output written on 0-main.pdf (16 pages, 520617 bytes).
 Transcript written on 0-main.log.

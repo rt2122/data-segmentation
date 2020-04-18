@@ -4,7 +4,8 @@ import numpy as np
 import astropy
 from astropy import units as u
 from astropy.coordinates import SkyCoord
-%matplotlib inline
+from tqdm import tqdm_notebook
+#%matplotlib inline
 
 def make_pic(center_pix, nside=2**11, size=64):
     def get_neighbours(npix, direction=None):
@@ -24,14 +25,14 @@ def make_pic(center_pix, nside=2**11, size=64):
          
     '''
     half = size // 2
-    ans = np.ones((size, size), dtype=np.int32)
+    ans = np.ones((size, size), dtype=np.int64)
     ans *= -1
     ans[half - 1, half - 1] = center_pix
     for i in range(half - 2, -1, -1):
         ans[i, i] = get_neighbours(ans[i + 1, i + 1], 'n')
     for i in range(1, size):
         ans[i, 0] = get_neighbours(ans[i - 1, 0], 'se')
-    for i in range(size):
+    for i in tqdm_notebook(range(size)):
         for j in range(1, size):
             if ans[i, j] == -1:
                 ans[i, j] = get_neighbours(ans[i, j - 1], 'sw')
