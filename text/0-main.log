@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.28)  19 APR 2020 01:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.28)  19 APR 2020 02:15
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -693,58 +693,63 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--26
+Underfull \hbox (badness 10000) in paragraph at lines 16--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--33
 
  []
 
 <inc/img/comparison0.jpg, id=96, 1020.28235pt x 684.88431pt>
 File: inc/img/comparison0.jpg Graphic file (type jpg)
 <use inc/img/comparison0.jpg>
-Package pdftex.def Info: inc/img/comparison0.jpg  used on input line 28.
+Package pdftex.def Info: inc/img/comparison0.jpg  used on input line 35.
 (pdftex.def)             Requested size: 318.66948pt x 213.91086pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--34
+Underfull \hbox (badness 10000) in paragraph at lines 39--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--42
+Underfull \hbox (badness 10000) in paragraph at lines 42--49
 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 43.
+(babel)             in language append on input line 49.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 43.
+(babel)             in language append on input line 49.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 50.
+(babel)             in language append on input line 49.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 50.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 50.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 50.
+(babel)             in language append on input line 49.
 [2
 
 
 
 ]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 71.
+(babel)             in language append on input line 50.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 71.
+(babel)             in language append on input line 50.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 71.
+(babel)             in language append on input line 66.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 71.
+(babel)             in language append on input line 66.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language append on input line 66.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language append on input line 66.
  [3 <./inc/img/comparison0.jpg>]
-<inc/img/unet0.png, id=118, 572.1375pt x 381.425pt>
+<inc/img/unet0.png, id=116, 572.1375pt x 381.425pt>
 File: inc/img/unet0.png Graphic file (type png)
 <use inc/img/unet0.png>
-Package pdftex.def Info: inc/img/unet0.png  used on input line 73.
+Package pdftex.def Info: inc/img/unet0.png  used on input line 80.
 (pdftex.def)             Requested size: 318.66948pt x 212.44998pt.
 )
 Package babel Info: Redefining russian shorthand "|
@@ -1114,7 +1119,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 41.
 Here is how much of TeX's memory you used:
  13788 strings out of 492982
  193085 string characters out of 6134896
- 266564 words of memory out of 5000000
+ 267564 words of memory out of 5000000
  16979 multiletter control sequences out of 15000+600000
  14108 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1129,7 +1134,7 @@ public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx
 /texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/p
 ublic/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm2
 488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on 0-main.pdf (16 pages, 520617 bytes).
+Output written on 0-main.pdf (16 pages, 521280 bytes).
 PDF statistics:
  289 PDF objects out of 1000 (max. 8388607)
  235 compressed objects within 3 object streams
