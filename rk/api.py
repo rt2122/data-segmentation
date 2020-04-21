@@ -224,9 +224,4 @@ def get_one_patch(ra, dec, radius):
     
     tab = ascii.read(results)
     
-    params = tab[0].colnames
-    data = pd.DataFrame([])
-    for p in params:
-        data[p] = tab[p]
-    
-    return data
+    return data.to_pandas()
