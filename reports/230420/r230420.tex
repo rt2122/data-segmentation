@@ -1,0 +1,34 @@
+\documentclass{article}
+  \usepackage{amssymb}
+  \usepackage{hyperref}
+  \usepackage[utf8]{inputenc}
+  \usepackage[russian]{babel}
+  \usepackage[left=2cm,right=2cm,
+    top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
+  \usepackage{gensymb}
+\begin{document}
+Отчет по курсовой работе за неделю\\
+Дата: 23.4.2020\\
+Научные руководители: Герасимов С.В., Мещеряков А.В.\\
+Студент: Немешаева Алиса\\
+Курс: 3\\
+
+\renewcommand{\labelitemi}{$\blacksquare$}
+\renewcommand\labelitemii{$\square$}
+За прошедшую неделю была проведена следующая работа:\\
+\begin{enumerate}
+    \item \href{https://github.com/rt2122/data-segmentation/blob/master/rk/
+        find_clusters_in_patch.ipynb}{Функция} по созданию матриц сегментации (последний этап 
+        создания тренирововчных данных). \\
+    \item Все функции по обработке данных собраны в одном \href{https://github.com/rt2122/
+        data-segmentation/blob/master/rk/all_p.py}{файле} и перепроверены.\\
+    \item Исправлен размер патча: $1.7 \degree$ (старый был $1.45 \degree$ из-за ошибки). Новое 
+        разрешение матриц с данными: 4096 x 4096 в разбиении $n_{side} = 2 ^ {17}$ (старые параметры 
+        64 x 64 и $2 ^ {11}$ соответственно). Размер части неба, отражаемой патчем не изменился, но
+        теперь на матрицу можно поместить данные полностью и разные объекты не попадают на одни и 
+        те же пиксели.\\
+    \item Загружены 50 патчей для обучения. Начата обработка данных. \\
+\end{enumerate}
+
+Общее количество строк кода: 343\\
+\end{document}
