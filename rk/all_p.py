@@ -79,9 +79,9 @@ def pic_all_filters(patch, pix_dict, base=0, size=4096):
             
             if pix in pix_dict:
                 x, y = pix_dict[pix]
+                result[x, y] = flux
             else:
                 drop.append(i)
-            result[x, y] = flux
         if len(drop) > 0:
             patch.drop(drop, axis='index', inplace=True)
         return result
@@ -127,7 +127,7 @@ def make_mask(ra, dec, dict_pix, cat, cluster_radius=0.08, patch_radius=1.7, nsi
     '''~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'''
 
 
-    mask = find_clusters(planck, ra, dec, patch_radius, cluster, nside=nside)
+    mask = find_clusters(cat, ra, dec, patch_radius, cluster_radius, nside=nside)
     return draw_clusters(dict_pix, mask, size)
 
 
