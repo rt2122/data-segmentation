@@ -24,7 +24,7 @@ def n_pix2ra_dec(npix, nside):
     sc = SkyCoord(l=theta*u.degree, b=phi*u.degree, frame='galactic')
     return sc.icrs.ra.degree, sc.icrs.dec.degree
 
-def gen_centers(cat, n, radius, nside=2**11, func=None, part=512):
+def gen_centers(cat, n, radius, nside=2**11, func=None, part=512, n_src=1):
     npix = hp.nside2npix(nside)
     a = None
     if nside > 2**11:
@@ -38,7 +38,7 @@ def gen_centers(cat, n, radius, nside=2**11, func=None, part=512):
     ans = []
     while len(ans) < n:
         num = np.random.choice(a)
-        if n_src_in_radius(cat, n_pix2ra_dec(num, nside), radius) > 0:
+        if n_src_in_radius(cat, n_pix2ra_dec(num, nside), radius) >= n_src:
             ans.append(num)
         else:
             np.delete(a, np.argwhere(a == num))

@@ -132,21 +132,36 @@ def make_mask(ra, dec, dict_pix, cat, cluster_radius=0.08, patch_radius=1.7, nsi
 
 
 class ClusterFile:
-
-    pnames = pd.DataFrame({'var':     ['typ', 'id_patch', 'ra', 'dec', 'state' , 'num',  'inpix', 'id_list'],
-                           'short':   ['t',   'ip',       'ra', 'dec', 's',      'n',    'in',    'il'],
-                           'val_type':['s',   'i',        'f',  'f',   's',      'i',    'i',     'i']})
+    import pandas as pd
+    pnames = pd.DataFrame({'var':     ['typ', 'id_patch', 'ra', 'dec', 'state' , 'num',  'inpix', 'id_list', 
+                                       'size', 'nside'],
+                           'short':   ['t',   'ip',       'ra', 'dec', 's',      'n',    'in',    'il', 
+                                       'len', 'hns'],
+                           'val_type':['s',   'i',        'f',  'f',   's',      'i',    'i',     'i', 
+                                       'f',  'i']})
 
     def __init__(self, name):
+        import re
         self.params = {'typ' : None,
+                'id_list' : None,
                 'id_patch' : None,
                 'ra' : None,
                 'dec' : None,
                 'state' : None,
                 'num' : None,
-                'inpix' : None,
-                'id_list' : None}
-        name = name[:-len('.csv')]
+                'inpix' : None, 
+                'size' : None,
+                'nside' : None}
+
+        def got_end(name):
+            d = re.findall(r'\.\D+', name)
+            if len(d) > 0:
+                return name[:-len(d[-1])]
+            return None
+        
+        if not (got_end(name) is None):
+            name = got_end(name)
+
         name = re.split('_', name)
         for n in name:
             for i in range(self.pnames.shape[0]):
@@ -159,7 +174,7 @@ class ClusterFile:
                         val = float(val)
                     self.params[self.pnames['var'].iloc[i]] = val
 
-    def file(self):
+    def file(self, end=''):
         s = ''
         for p in self.params:
             if not (self.params[p] is None):
@@ -167,14 +182,26 @@ class ClusterFile:
                 sh = self.pnames['short'].iloc[idx]
                 s += sh
                 val = self.params[p]
-                if re.match('float', str(type(val))):
+                #if re.match('float', str(type(val))):
+                if self.pnames['val_type'].iloc[idx] == 'f':
                     s += '%.4f' % val
                 else:
                     s += str(val)
                 s += '_'
         s = s[:-1]
-        return s + '.csv'
-
+        return s + end
+    
+    @staticmethod
+    def renew_names(dirname, par, val, end=''):
+        from os import walk
+        from os import rename
+        from os.path import join
+        files = next(walk(dirname))[-1]
+        for f in files:
+            cf = ClusterFile(f)
+            cf.params[par] = val
+            rename(join(dirname, f), join(dirname, cf.file(end)))
+            print('Old name: %s; new name: %s' % (f, cf.file(end)))
 
 
 
