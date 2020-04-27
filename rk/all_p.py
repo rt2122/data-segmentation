@@ -21,10 +21,10 @@ def remove_duplicates_patch(patch, drop_err=True):
           'yPSFFlux', 'yKronFlux']
     
     for p in params:
-        idx = patch[patch[p+'Err']==-999].index
-        patch.loc[idx,p+'Err'] = np.nan
-        idx = patch[patch[p]==-999].index
-        patch.loc[idx,p]=np.nan
+        idx = patch[patch[p+'Err']==-999.0].index
+        patch.loc[p+'Err', idx] = np.nan
+        idx = patch[patch[p]==-999.0].index
+        patch.loc[p, idx]=np.nan
 
     
     for l, b in coords:
