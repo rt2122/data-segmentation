@@ -10,6 +10,6 @@ def show_pic(pic, idx=[0, 1, 2], sigma=10, figsize=(30,30), dpi=80, plugin='matp
     g /= g.max()
     g *= 255
     g = gaussian(g, sigma=sigma, multichannel=True)
-    plt.figure(figsize=figsize, dpi=dpi)
-    imshow(g.astype(np.int32), plugin=plugin)
+    #plt.figure(figsize=figsize, dpi=dpi)
+    #imshow(g.astype(np.int32), plugin=plugin)
     return g
