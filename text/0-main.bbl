@@ -32,4 +32,13 @@ PanSTARRS1 (PS1) Catalog Archive Server Jobs System (CasJobs) service.
 \selectlanguageifdefined{english}
 HEALPix.
 
+\bibitem{Vikhlinin}
+\selectlanguageifdefined{russian}
+\BibEmph{Вихлинин,~А.~А.} Наблюдательная
+  космология и изучение межгалактической
+  среды по рентгеновским данным о
+  скоплениях галактик~/ А.~А.~Вихлинин. ---
+\newblock Российская Академия Наук, Институт
+  Космических Исследований, 2002.
+
 \end{thebibliography}
