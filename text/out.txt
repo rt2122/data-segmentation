@@ -81,8 +81,8 @@ See the caption package documentation for explanation.
 (/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty)) (./0-main.aux
 (./11-title-page.aux) (./21-annotation.aux) (./22-intro.aux)
 (./31-chapter-one.aux) (./32-chapter-two.aux) (./33-chapter-three.aux)
-(./34-chapter-four.aux) (./4-conclusion.aux) (./5-biblio.aux))
-(/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def)
+(./34-chapter-four.aux) (./35-chapter-five.aux) (./4-conclusion.aux)
+(./5-biblio.aux)) (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def)
 (/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty)
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -117,91 +117,123 @@ ntifier (name{page.1}) has been already used, duplicate ignored
                    \relax 
 l.20 \include{21-annotation}
                              [1] (./22-intro.tex
-Underfull \hbox (badness 10000) in paragraph at lines 14--22
+Underfull \hbox (badness 10000) in paragraph at lines 16--30
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--30
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--42
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 43--47
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--52
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--57
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--38
+Underfull \hbox (badness 10000) in paragraph at lines 64--70
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--46
+Underfull \hbox (badness 10000) in paragraph at lines 71--77
 
-[2] [3 <./inc/img/comparison0.jpg>]) [4 <./inc/img/unet0.png (PNG copy)>]
-(./31-chapter-one.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--7
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8--13
+[3] [4 <./inc/img/comparison0.jpg>]) [5] (./31-chapter-one.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--11
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--33
+Underfull \hbox (badness 10000) in paragraph at lines 12--14
 
-) [5] [6] (./32-chapter-two.tex
-Underfull \hbox (badness 10000) in paragraph at lines 8--10
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--27
+) [6] (./32-chapter-two.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--7
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--38
-
-[7 <./inc/img/healpix0.jpg>]
-Underfull \hbox (badness 2469) in paragraph at lines 39--43
-[]\T2A/cmr/m/n/12 —лучайным об^^?ра^^?зом в со^^?от^^?вет^^?ству^^?ю^^?хих об^^
-?ла^^?ст€х раз^^?би^^?е^^?ни€ HEALPix
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--43
+Underfull \hbox (badness 10000) in paragraph at lines 10--12
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--52
+Underfull \hbox (badness 10000) in paragraph at lines 23--26
 
 
-Underfull \hbox (badness 1371) in paragraph at lines 53--62
-\T2A/cmr/m/n/12 пе^^?ре^^?обу^^?че^^?ни€. ѕо^^?сле всех бло^^?ков де^^?ко^^?ди^
-^?ров^^?щи^^?ка до^^?бав^^?л€^^?ет^^?с€ слой ак^^?ти^^?ва^^?ции
-
-Underfull \hbox (badness 1596) in paragraph at lines 53--62
-\T2A/cmr/m/n/12 сиг^^?мо^^?и^^?ды дл€ по^^?сле^^?ду^^?ю^^?ще^^?го ис^^?поль^^?з
-о^^?ва^^?ни€ кросс-^^?энтро^^?пии как loss-^^?функ^^?ции.
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--62
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--67
-
-[8 <./inc/img/sz0.png>]
-(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def)
-Underfull \hbox (badness 10000) in paragraph at lines 70--74
-
-) [9] [10 <./inc/img/wav0.png>] (./33-chapter-three.tex
-Underfull \hbox (badness 10000) in paragraph at lines 17--23
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 34--37
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--45
+Underfull \hbox (badness 2469) in paragraph at lines 38--42
+[]\T2A/cmr/m/n/12 —лучайным об^^?ра^^?зом в со^^?от^^?вет^^?ству^^?ю^^?хих об^^
+?ла^^?ст€х раз^^?би^^?е^^?ни€ HEALPix
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--42
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
+
+
+Underfull \hbox (badness 1371) in paragraph at lines 52--61
+\T2A/cmr/m/n/12 пе^^?ре^^?обу^^?че^^?ни€. ѕо^^?сле всех бло^^?ков де^^?ко^^?ди^
+^?ров^^?щи^^?ка до^^?бав^^?л€^^?ет^^?с€ слой ак^^?ти^^?ва^^?ции
+
+Underfull \hbox (badness 1596) in paragraph at lines 52--61
+\T2A/cmr/m/n/12 сиг^^?мо^^?и^^?ды дл€ по^^?сле^^?ду^^?ю^^?ще^^?го ис^^?поль^^?з
+о^^?ва^^?ни€ кросс-^^?энтро^^?пии как loss-^^?функ^^?ции.
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--61
+
+[8 <./inc/img/healpix0.jpg> <./inc/img/sz0.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 62--66
+
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def)
+Underfull \hbox (badness 10000) in paragraph at lines 69--73
+
+[9 <./inc/img/wav0.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 92--95
+
+) [10 <./inc/img/unet0.png (PNG copy)>] (./33-chapter-three.tex
+Underfull \hbox (badness 2065) in paragraph at lines 40--46
+[]\T2A/cmr/m/n/12 ћатрицы, по^^?лу^^?ча^^?ю^^?щи^^?е^^?с€ при пре^^?об^^?ра^^?з
+о^^?ва^^?нии дан^^?ных из кос^^?ми^^?че^^?ских
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--46
 
 [11]
-Underfull \hbox (badness 1231) in paragraph at lines 46--49
+Underfull \hbox (badness 10000) in paragraph at lines 68--74
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--88
+
+[12 <./inc/img/gen0.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 89--96
+
+
+Underfull \hbox (badness 1231) in paragraph at lines 97--100
 \T2A/cmr/m/n/12 ко^^?ли^^?че^^?ством ка^^?на^^?лов, сов^^?па^^?да^^?ю^^?щих с к
 о^^?ли^^?че^^?ством ис^^?сле^^?ду^^?е^^?мых па^^?ра^^?мет^^?ров у
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--49
+Underfull \hbox (badness 10000) in paragraph at lines 97--100
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--52
+Underfull \hbox (badness 10000) in paragraph at lines 101--103
 
 )
-Underfull \hbox (badness 1147) in paragraph at lines 53--27
+Underfull \hbox (badness 1147) in paragraph at lines 104--27
 \T2A/cmr/m/n/12 есть у пер^^?вой вер^^?сии ней^^?ро^^?се^^?те^^?вой мо^^?де^^?л
 и бу^^?дет 5 вход^^?ных сло^^?Љв. «на^^?че^^?ни€
-[12] (./34-chapter-four.tex
+[13] (./34-chapter-four.tex
+Underfull \hbox (badness 10000) in paragraph at lines 9--13
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--17
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--29
+
+[14 <./inc/img/mask0.png (PNG copy)>]) [15] (./35-chapter-five.tex
 Underfull \hbox (badness 10000) in paragraph at lines 6--8
 
 
@@ -217,7 +249,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--31
 
 Underfull \hbox (badness 10000) in paragraph at lines 43--47
 
-[13 <./inc/img/sym0.png> <./inc/img/sym1.png> <./inc/img/sym2.png>]
+[16 <./inc/img/sym0.png> <./inc/img/sym1.png> <./inc/img/sym2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 48--55
 
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-33.def)
@@ -226,7 +258,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--72
 
 Underfull \hbox (badness 10000) in paragraph at lines 78--83
 
-[14 <./inc/img/patch0.png> <./inc/img/patch1.png>]) [15 <./inc/img/pix2pic0.png
+[17 <./inc/img/patch0.png> <./inc/img/patch1.png>]) [18 <./inc/img/pix2pic0.png
 >] (./4-conclusion.tex
 Underfull \hbox (badness 1596) in paragraph at lines 13--15
 []\T2A/cmr/m/n/12 ќбработка дан^^?ных PS1 тре^^?бу^^?ет боль^^?ше вре^^?ме^^?ни
@@ -234,16 +266,12 @@ Underfull \hbox (badness 1596) in paragraph at lines 13--15
 
 Underfull \hbox (badness 10000) in paragraph at lines 13--15
 
-) [16] (./5-biblio.tex (./0-main.bbl
-(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def))) [17]
+) [19] (./5-biblio.tex (./0-main.bbl
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def))) [20]
 (./0-main.aux (./11-title-page.aux) (./21-annotation.aux) (./22-intro.aux)
 (./31-chapter-one.aux) (./32-chapter-two.aux) (./33-chapter-three.aux)
-(./34-chapter-four.aux) (./4-conclusion.aux) (./5-biblio.aux))
-
-Package rerunfilecheck Warning: File `0-main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
+(./34-chapter-four.aux) (./35-chapter-five.aux) (./4-conclusion.aux)
+(./5-biblio.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -260,7 +288,7 @@ are/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type
 rm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/sha
 re/texmf/fonts/type1/public/cm-super/sfrm2488.pfb></usr/share/texmf/fonts/type1
 /public/cm-super/sfti1200.pfb>
-Output written on 0-main.pdf (19 pages, 835719 bytes).
+Output written on 0-main.pdf (22 pages, 917615 bytes).
 Transcript written on 0-main.log.
 This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex)
  \write18 enabled.
@@ -345,8 +373,8 @@ See the caption package documentation for explanation.
 (/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty)) (./0-main.aux
 (./11-title-page.aux) (./21-annotation.aux) (./22-intro.aux)
 (./31-chapter-one.aux) (./32-chapter-two.aux) (./33-chapter-three.aux)
-(./34-chapter-four.aux) (./4-conclusion.aux) (./5-biblio.aux))
-(/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def)
+(./34-chapter-four.aux) (./35-chapter-five.aux) (./4-conclusion.aux)
+(./5-biblio.aux)) (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def)
 (/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty)
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -381,91 +409,123 @@ ntifier (name{page.1}) has been already used, duplicate ignored
                    \relax 
 l.20 \include{21-annotation}
                              [1] (./22-intro.tex
-Underfull \hbox (badness 10000) in paragraph at lines 14--22
+Underfull \hbox (badness 10000) in paragraph at lines 16--30
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--30
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--42
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 43--47
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--52
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--57
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--38
+Underfull \hbox (badness 10000) in paragraph at lines 64--70
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--46
+Underfull \hbox (badness 10000) in paragraph at lines 71--77
 
-[2] [3 <./inc/img/comparison0.jpg>]) [4 <./inc/img/unet0.png (PNG copy)>]
-(./31-chapter-one.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--7
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8--13
+[3] [4 <./inc/img/comparison0.jpg>]) [5] (./31-chapter-one.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--11
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--33
+Underfull \hbox (badness 10000) in paragraph at lines 12--14
 
-) [5] [6] (./32-chapter-two.tex
-Underfull \hbox (badness 10000) in paragraph at lines 8--10
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--27
+) [6] (./32-chapter-two.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--7
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--38
-
-[7 <./inc/img/healpix0.jpg>]
-Underfull \hbox (badness 2469) in paragraph at lines 39--43
-[]\T2A/cmr/m/n/12 —лучайным об^^?ра^^?зом в со^^?от^^?вет^^?ству^^?ю^^?хих об^^
-?ла^^?ст€х раз^^?би^^?е^^?ни€ HEALPix
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--43
+Underfull \hbox (badness 10000) in paragraph at lines 10--12
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--52
+Underfull \hbox (badness 10000) in paragraph at lines 23--26
 
 
-Underfull \hbox (badness 1371) in paragraph at lines 53--62
-\T2A/cmr/m/n/12 пе^^?ре^^?обу^^?че^^?ни€. ѕо^^?сле всех бло^^?ков де^^?ко^^?ди^
-^?ров^^?щи^^?ка до^^?бав^^?л€^^?ет^^?с€ слой ак^^?ти^^?ва^^?ции
-
-Underfull \hbox (badness 1596) in paragraph at lines 53--62
-\T2A/cmr/m/n/12 сиг^^?мо^^?и^^?ды дл€ по^^?сле^^?ду^^?ю^^?ще^^?го ис^^?поль^^?з
-о^^?ва^^?ни€ кросс-^^?энтро^^?пии как loss-^^?функ^^?ции.
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--62
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--67
-
-[8 <./inc/img/sz0.png>]
-(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def)
-Underfull \hbox (badness 10000) in paragraph at lines 70--74
-
-) [9] [10 <./inc/img/wav0.png>] (./33-chapter-three.tex
-Underfull \hbox (badness 10000) in paragraph at lines 17--23
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 34--37
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--45
+Underfull \hbox (badness 2469) in paragraph at lines 38--42
+[]\T2A/cmr/m/n/12 —лучайным об^^?ра^^?зом в со^^?от^^?вет^^?ству^^?ю^^?хих об^^
+?ла^^?ст€х раз^^?би^^?е^^?ни€ HEALPix
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--42
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
+
+
+Underfull \hbox (badness 1371) in paragraph at lines 52--61
+\T2A/cmr/m/n/12 пе^^?ре^^?обу^^?че^^?ни€. ѕо^^?сле всех бло^^?ков де^^?ко^^?ди^
+^?ров^^?щи^^?ка до^^?бав^^?л€^^?ет^^?с€ слой ак^^?ти^^?ва^^?ции
+
+Underfull \hbox (badness 1596) in paragraph at lines 52--61
+\T2A/cmr/m/n/12 сиг^^?мо^^?и^^?ды дл€ по^^?сле^^?ду^^?ю^^?ще^^?го ис^^?поль^^?з
+о^^?ва^^?ни€ кросс-^^?энтро^^?пии как loss-^^?функ^^?ции.
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--61
+
+[8 <./inc/img/healpix0.jpg> <./inc/img/sz0.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 62--66
+
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def)
+Underfull \hbox (badness 10000) in paragraph at lines 69--73
+
+[9 <./inc/img/wav0.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 92--95
+
+) [10 <./inc/img/unet0.png (PNG copy)>] (./33-chapter-three.tex
+Underfull \hbox (badness 2065) in paragraph at lines 40--46
+[]\T2A/cmr/m/n/12 ћатрицы, по^^?лу^^?ча^^?ю^^?щи^^?е^^?с€ при пре^^?об^^?ра^^?з
+о^^?ва^^?нии дан^^?ных из кос^^?ми^^?че^^?ских
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--46
 
 [11]
-Underfull \hbox (badness 1231) in paragraph at lines 46--49
+Underfull \hbox (badness 10000) in paragraph at lines 68--74
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--88
+
+[12 <./inc/img/gen0.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 89--96
+
+
+Underfull \hbox (badness 1231) in paragraph at lines 97--100
 \T2A/cmr/m/n/12 ко^^?ли^^?че^^?ством ка^^?на^^?лов, сов^^?па^^?да^^?ю^^?щих с к
 о^^?ли^^?че^^?ством ис^^?сле^^?ду^^?е^^?мых па^^?ра^^?мет^^?ров у
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--49
+Underfull \hbox (badness 10000) in paragraph at lines 97--100
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--52
+Underfull \hbox (badness 10000) in paragraph at lines 101--103
 
 )
-Underfull \hbox (badness 1147) in paragraph at lines 53--27
+Underfull \hbox (badness 1147) in paragraph at lines 104--27
 \T2A/cmr/m/n/12 есть у пер^^?вой вер^^?сии ней^^?ро^^?се^^?те^^?вой мо^^?де^^?л
 и бу^^?дет 5 вход^^?ных сло^^?Љв. «на^^?че^^?ни€
-[12] (./34-chapter-four.tex
+[13] (./34-chapter-four.tex
+Underfull \hbox (badness 10000) in paragraph at lines 9--13
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--17
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--29
+
+[14 <./inc/img/mask0.png (PNG copy)>]) [15] (./35-chapter-five.tex
 Underfull \hbox (badness 10000) in paragraph at lines 6--8
 
 
@@ -481,7 +541,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--31
 
 Underfull \hbox (badness 10000) in paragraph at lines 43--47
 
-[13 <./inc/img/sym0.png> <./inc/img/sym1.png> <./inc/img/sym2.png>]
+[16 <./inc/img/sym0.png> <./inc/img/sym1.png> <./inc/img/sym2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 48--55
 
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-33.def)
@@ -490,7 +550,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--72
 
 Underfull \hbox (badness 10000) in paragraph at lines 78--83
 
-[14 <./inc/img/patch0.png> <./inc/img/patch1.png>]) [15 <./inc/img/pix2pic0.png
+[17 <./inc/img/patch0.png> <./inc/img/patch1.png>]) [18 <./inc/img/pix2pic0.png
 >] (./4-conclusion.tex
 Underfull \hbox (badness 1596) in paragraph at lines 13--15
 []\T2A/cmr/m/n/12 ќбработка дан^^?ных PS1 тре^^?бу^^?ет боль^^?ше вре^^?ме^^?ни
@@ -498,11 +558,12 @@ Underfull \hbox (badness 1596) in paragraph at lines 13--15
 
 Underfull \hbox (badness 10000) in paragraph at lines 13--15
 
-) [16] (./5-biblio.tex (./0-main.bbl
-(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def))) [17]
+) [19] (./5-biblio.tex (./0-main.bbl
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def))) [20]
 (./0-main.aux (./11-title-page.aux) (./21-annotation.aux) (./22-intro.aux)
 (./31-chapter-one.aux) (./32-chapter-two.aux) (./33-chapter-three.aux)
-(./34-chapter-four.aux) (./4-conclusion.aux) (./5-biblio.aux))
+(./34-chapter-four.aux) (./35-chapter-five.aux) (./4-conclusion.aux)
+(./5-biblio.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -519,5 +580,5 @@ are/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type
 rm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/sha
 re/texmf/fonts/type1/public/cm-super/sfrm2488.pfb></usr/share/texmf/fonts/type1
 /public/cm-super/sfti1200.pfb>
-Output written on 0-main.pdf (19 pages, 835686 bytes).
+Output written on 0-main.pdf (22 pages, 917619 bytes).
 Transcript written on 0-main.log.

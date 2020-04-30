@@ -8,13 +8,14 @@ A level-1 auxiliary file: 31-chapter-one.aux
 A level-1 auxiliary file: 32-chapter-two.aux
 A level-1 auxiliary file: 33-chapter-three.aux
 A level-1 auxiliary file: 34-chapter-four.aux
+A level-1 auxiliary file: 35-chapter-five.aux
 A level-1 auxiliary file: 4-conclusion.aux
 A level-1 auxiliary file: 5-biblio.aux
 The style file: gost780u.bst
 Database file #1: 0-main.bib
 You've used 6 entries,
             2674 wiz_defined-function locations,
-            673 strings with 5855 characters,
+            674 strings with 5874 characters,
 and the built_in function-call counts, 1155 in all, are:
 = -- 127
 > -- 15
