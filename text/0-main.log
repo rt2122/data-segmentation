@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.28)  30 APR 2020 23:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.28)  30 APR 2020 23:47
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1006,32 +1006,32 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language append on input line 4.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 45.
+(babel)             in language append on input line 43.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 45.
+(babel)             in language append on input line 43.
 
-Underfull \hbox (badness 2065) in paragraph at lines 46--52
+Underfull \hbox (badness 2065) in paragraph at lines 44--50
 []\T2A/cmr/m/n/12 Матрицы, по^^?лу^^?ча^^?ю^^?щи^^?е^^?ся при пре^^?об^^?ра^^?з
 о^^?ва^^?нии дан^^?ных из кос^^?ми^^?че^^?ских
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--52
+Underfull \hbox (badness 10000) in paragraph at lines 44--50
 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 54.
+(babel)             in language append on input line 52.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 54.
+(babel)             in language append on input line 52.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 59.
+(babel)             in language append on input line 57.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 59.
+(babel)             in language append on input line 57.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 59.
+(babel)             in language append on input line 57.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 59.
+(babel)             in language append on input line 57.
 [11
 
 
@@ -1040,59 +1040,59 @@ Package babel Info: Redefining russian shorthand "~
 <inc/img/gen0.png, id=251, 714.67pt x 352.31625pt>
 File: inc/img/gen0.png Graphic file (type png)
 <use inc/img/gen0.png>
-Package pdftex.def Info: inc/img/gen0.png  used on input line 68.
+Package pdftex.def Info: inc/img/gen0.png  used on input line 66.
 (pdftex.def)             Requested size: 318.66948pt x 157.09473pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 73.
+(babel)             in language append on input line 71.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 73.
+(babel)             in language append on input line 71.
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--80
+Underfull \hbox (badness 10000) in paragraph at lines 72--78
 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 87.
+(babel)             in language append on input line 85.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 87.
+(babel)             in language append on input line 85.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language append on input line 87.
+(babel)             in language append on input line 85.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language append on input line 87.
+(babel)             in language append on input line 85.
 [12 <./inc/img/gen0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 91--94
+Underfull \hbox (badness 10000) in paragraph at lines 89--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--102
+Underfull \hbox (badness 10000) in paragraph at lines 93--100
 
  []
 
 
-Underfull \hbox (badness 1231) in paragraph at lines 103--106
+Underfull \hbox (badness 1231) in paragraph at lines 101--104
 \T2A/cmr/m/n/12 ко^^?ли^^?че^^?ством ка^^?на^^?лов, сов^^?па^^?да^^?ю^^?щих с к
 о^^?ли^^?че^^?ством ис^^?сле^^?ду^^?е^^?мых па^^?ра^^?мет^^?ров у
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--106
+Underfull \hbox (badness 10000) in paragraph at lines 101--104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--109
+Underfull \hbox (badness 10000) in paragraph at lines 105--107
 
  []
 
 
-Underfull \hbox (badness 2635) in paragraph at lines 110--113
+Underfull \hbox (badness 2635) in paragraph at lines 108--111
 []\T2A/cmr/m/n/12 Для обу^^?че^^?ния пла^^?ни^^?ру^^?ет^^?ся ис^^?поль^^?зо^^?в
 а^^?ние па^^?ра^^?мет^^?ров (filter)KronFlux,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--113
+Underfull \hbox (badness 10000) in paragraph at lines 108--111
 
  []
 
@@ -1377,7 +1377,7 @@ msfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb
 onts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm
 -super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm2488.pfb>
 </usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on 0-main.pdf (22 pages, 917858 bytes).
+Output written on 0-main.pdf (22 pages, 917909 bytes).
 PDF statistics:
  399 PDF objects out of 1000 (max. 8388607)
  333 compressed objects within 4 object streams
