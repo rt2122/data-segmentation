@@ -16,12 +16,6 @@ Abell 2199. ---
 \selectlanguageifdefined{english}
 PanSTARRS1 (PS1) Catalog Archive Server Jobs System (CasJobs) service.
 
-\bibitem{Unet}
-\selectlanguageifdefined{english}
-\BibEmph{O.~Ronneberger~P.~Fischer,~T.~Brox}. U-Net: Convolutional Networks for
-  Biomedical Image Segmentation~/ T.~Brox~O.~Ronneberger, P.~Fischer. ---
-\newblock 2015.
-
 \bibitem{Bonjean}
 \selectlanguageifdefined{english}
 \BibEmph{Bonjean,~V.} Deep learning for Sunyaev–Zel’dovich detection in
@@ -40,5 +34,11 @@ HEALPix.
   скоплениях галактик~/ А.~А.~Вихлинин. ---
 \newblock Российская Академия Наук, Институт
   Космических Исследований, 2002.
+
+\bibitem{Unet}
+\selectlanguageifdefined{english}
+\BibEmph{O.~Ronneberger~P.~Fischer,~T.~Brox}. U-Net: Convolutional Networks for
+  Biomedical Image Segmentation~/ T.~Brox~O.~Ronneberger, P.~Fischer. ---
+\newblock 2015.
 
 \end{thebibliography}
